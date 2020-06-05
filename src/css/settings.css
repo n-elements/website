@@ -26,6 +26,22 @@
   --ifm-color-contrast-lighter: #242E42;
   --ifm-color-contrast-lightest: #364563;
 
+  --ifm-color-success: #02D98C;
+  --ifm-color-success-dark: #02CA82;
+  --ifm-color-success-darker: #02B675;
+  --ifm-color-success-darkest: #019D65;
+  --ifm-color-success-light: #02E996;
+  --ifm-color-success-lighter: #02F89F;
+  --ifm-color-success-lightest: #0CFDA6;
+
+  --ifm-color-info: #0057ff;
+  --ifm-color-info-dark: #004ee6;
+  --ifm-color-info-darker: #004ad9;
+  --ifm-color-info-darkest: #003db3;
+  --ifm-color-info-light: #1a68ff;
+  --ifm-color-info-lighter: #2670ff;
+  --ifm-color-info-lightest: #4d89ff;
+
   /* Document */
   --ifm-background-color: #fff;
   --ifm-font-family-base: "Roboto Mono";
