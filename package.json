@@ -6,7 +6,6 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
     "release": "git pull && standard-version --release-as patch && git push --follow-tags",
     "release:minor": "git pull && standard-version --release-as minor && git push --follow-tags"
   },
@@ -24,8 +23,17 @@
     "last 1 edge version"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "7.1.0",
+    "eslint-config-oval": "2.0.3",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "4.0.4",
     "standard-version": "^8.0.0",
     "stylelint": "^13.6.0",
-    "stylelint-config-oval": "^1.0.6"
+    "stylelint-config-oval": "^1.0.6",
+    "typescript": "^3.9.5"
   }
 }
