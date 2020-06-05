@@ -14,29 +14,31 @@ function Home() {
       description={siteConfig.tagline}
     >
       <header className={styles.Herobanner}>
-        <div>
-          <h1 className={styles.DisplayTitle}>{siteConfig.title}</h1>
-          <p className={styles.Tagline}>{siteConfig.tagline}</p>
+        <div className={styles.Container}>
+          <div>
+            <h1 className={styles.DisplayTitle}>{siteConfig.title}</h1>
+            <p className={styles.Tagline}>{siteConfig.tagline}</p>
 
-          <div className={styles.CTAs}>
-            <Link
-              className="button button--primary button--lg"
-              to={useBaseUrl('docs/')}
-            >
-              Getting Started
-            </Link>
-            <a
-              className="button button--secondary button--lg"
-              href="https://native-elements.netlify.app/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Build your theme
-            </a>
+            <div className={styles.CTAs}>
+              <Link
+                className="button button--primary button--lg"
+                to={useBaseUrl('docs/')}
+              >
+                Getting Started
+              </Link>
+              <a
+                className="button button--secondary button--lg"
+                href="https://native-elements.netlify.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Build your theme
+              </a>
+            </div>
           </div>
-        </div>
-        <div className={styles.AnimationContainer}>
-          <HeroAnimation />
+          <div className={styles.AnimationContainer}>
+            <HeroAnimation />
+          </div>
         </div>
       </header>
     </Layout>

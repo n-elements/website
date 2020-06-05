@@ -31,12 +31,12 @@
   --ifm-font-family-base: "Roboto Mono";
   --ifm-heading-font-weight: 900;
   --ifm-code-font-size: 95%;
-  --ifm-color-content: var(--ifm-color-contrast);
   --ifm-global-radius: 0.25rem;
+  --ifm-container-width: 56rem;
 
   /* Navbar */
   --ifm-navbar-link-color: var(--ifm-color-primary);
-  --ifm-navbar-link-hover-color: var(--ifm-color-contrast);
+  --ifm-navbar-link-hover-color: var(--ifm-color-content);
   --ifm-navbar-padding-vertical: 16px;
   --ifm-navbar-padding-horizontal: 32px;
 
