@@ -35,6 +35,7 @@
 .DisplayTitle {
   font-size: 3rem;
   margin-bottom: 0;
+  font-weight: 900;
 
   @media (--from-medium) {
     font-size: 5rem;

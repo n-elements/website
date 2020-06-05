@@ -53,7 +53,7 @@ module.exports = {
       {
         docs: {
           path: 'src/docs',
-          homePageId: 'doc1',
+          homePageId: 'getting-started/introduction',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {

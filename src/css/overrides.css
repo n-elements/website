@@ -10,11 +10,6 @@ a[href^='https://']::after {
   mask-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.167.917a.75.75 0 01.75-.75h4.166a.747.747 0 01.75.75v4.166a.75.75 0 01-1.5 0V2.727l-3.72 3.72a.75.75 0 01-1.06-1.06l3.72-3.72H6.917a.75.75 0 01-.75-.75zm-1.75 2.666h-1.5v5.5h5.5v-1.5a1 1 0 112 0V9.25a1.833 1.833 0 01-1.834 1.833H2.75A1.833 1.833 0 01.917 9.25V3.417A1.833 1.833 0 012.75 1.583h1.667a1 1 0 110 2z" fill="%23000"/></svg>');
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-}
-
-
 /* Navbar */
 
 .navbar {
@@ -26,8 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar__link {
-  font-weight: bold;
-  /* font-size: 0.875rem; */
+  font-weight: 500;
 }
 
 
@@ -65,4 +59,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .alert--secondary {
   --ifm-alert-background-color: none;
+}
+
+/* Sidebar */
+
+.menu__link--active, .menu__list {
+  font-weight: 500;
+}
+
+.menu__list .menu__list {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.menu__link.menu__link--active.active {
+  font-weight: 400;
 }

@@ -44,17 +44,26 @@
 
   /* Document */
   --ifm-background-color: #fff;
-  --ifm-font-family-base: "Roboto Mono";
-  --ifm-heading-font-weight: 900;
+  --ifm-color-content: var(--ifm-color-contrast-lightest);
+  --ifm-font-family-base: "Roboto";
+  --ifm-heading-font-weight: 700;
+  --ifm-heading-color: var(--ifm-color-contrast);
   --ifm-code-font-size: 95%;
   --ifm-global-radius: 0.25rem;
-  --ifm-container-width: 56rem;
+  --ifm-container-width: 64rem;
 
   /* Navbar */
   --ifm-navbar-link-color: var(--ifm-color-primary);
   --ifm-navbar-link-hover-color: var(--ifm-color-content);
   --ifm-navbar-padding-vertical: 16px;
   --ifm-navbar-padding-horizontal: 32px;
+  --ifm-navbar-shadow: rgba(0, 0, 0, 0.05) 0px 4px 28px 0px;
+
+  /* Sidebar */
+  --ifm-toc-border-color: var(--ifm-color-secondary-lightest);
+  --ifm-menu-color-background-active: #EBF2FF;
+  --ifm-menu-color-background-hover: transparent;
+  --ifm-menu-link-padding-vertical: 0.5rem;
 
   /* Button */
   --ifm-button-padding-vertical: 1rem;
