@@ -12,7 +12,9 @@
     "react/jsx-filename-extension": 0,
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
     "@typescript-eslint/prefer-optional-chain": 0,
-    "@typescript-eslint/prefer-nullish-coalescing": 0
+    "@typescript-eslint/prefer-nullish-coalescing": 0,
+    "@typescript-eslint/naming-convention": 0,
+    "react/no-array-index-key": 0
   },
   "ignorePatterns": ["docusaurus.config.js", "build/"]
 }
