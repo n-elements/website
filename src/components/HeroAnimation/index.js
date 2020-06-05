@@ -16,7 +16,7 @@ export default function HeroAnimation({ className }) {
         bullets.map((item, index) => {
           const x = randomfromrange(-200, 600);
           const y = randomfromrange(-50, 350);
-          const s = randomfromrange(5, 20);
+          const s = randomfromrange(4, 10);
           const l = Math.floor(randomfromrange(20, 100));
 
           return (
@@ -24,6 +24,8 @@ export default function HeroAnimation({ className }) {
               className={styles.Bullet}
               key={index + l}
               style={{
+                '--delay': `${index / 10}s`,
+
                 top: y,
                 left: x,
                 height: s,
@@ -47,6 +49,8 @@ export default function HeroAnimation({ className }) {
               className={styles.Cross}
               key={index + h}
               style={{
+                '--delay': `${index / 10}s`,
+
                 top: y,
                 left: x,
                 height: s,
