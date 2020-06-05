@@ -4,6 +4,21 @@
   height: 400px;
 }
 
+.Bullet {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.Cross {
+  position: absolute;
+
+  & svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .Card {
   --x1: 40px;
   --x2: 213px;

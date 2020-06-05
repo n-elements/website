@@ -20,7 +20,7 @@ module.exports = () => ({
               ...getStyleLoaders(false, {
                 importLoaders: 1,
                 modules: {
-                  localIdentName: isProd ? '[hash:base64:4]' : '[local]-[hash:base64:4]',
+                  localIdentName: isProd ? '[hash:base64:8]' : '[local]-[hash:base64:8]',
                 },
               }),
               'postcss-loader',
