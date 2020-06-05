@@ -1,0 +1,31 @@
+{
+  "name": "native-elements-website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "release": "git pull && standard-version --release-as patch && git push --follow-tags",
+    "release:minor": "git pull && standard-version --release-as minor && git push --follow-tags"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.56",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.56",
+    "classnames": "^2.2.6",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 edge version"
+  ],
+  "devDependencies": {
+    "standard-version": "^8.0.0",
+    "stylelint": "^13.6.0",
+    "stylelint-config-oval": "^1.0.6"
+  }
+}
