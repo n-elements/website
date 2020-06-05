@@ -3,7 +3,7 @@ const package = require('./package.json');
 
 module.exports = {
   title: 'Native Elements',
-  tagline: 'HTML elements with CSS superpowers',
+  tagline: 'HTML elements with CSS superpowers.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -44,7 +44,7 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      copyright: `Copyright © ${new Date().getFullYear()} Native Elements is made by Mattia Astorino & Paolo Roth`,
+      copyright: `&copy; ${new Date().getFullYear()} Native Elements is made by Mattia Astorino & Paolo Roth`,
     },
   },
   presets: [

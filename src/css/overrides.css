@@ -1,3 +1,8 @@
+.main-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 /* Typography */
 
 a[href^='https://']::after {
@@ -14,9 +19,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+
+/* Navbar */
+
+.navbar {
+  align-items: center;
+}
+
+.navbar__brand {
+  height: 24px;
+}
+
 .navbar__link {
   font-weight: bold;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
 }
 
 
@@ -25,4 +41,27 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+
+/* Buttons */
+
+.button {
+  --ifm-button-size-multiplier: 1.2;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.button.button--secondary {
+  color: var(--ifm-color-primary);
+}
+
+.button--secondary:not(.button--outline) {
+  --ifm-button-background-color: var(--ifm-color-secondary-lightest);
+  --ifm-button-border-color: var(--ifm-color-secondary-lightest);
+
+  &:hover {
+    --ifm-button-background-color: var(--ifm-color-secondary-light);
+    --ifm-button-border-color: var(--ifm-color-secondary-light);
+  }
 }

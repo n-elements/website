@@ -16,7 +16,7 @@
   --ifm-color-secondary-darkest: #7988a5;
   --ifm-color-secondary-light: #dadfe6;
   --ifm-color-secondary-lighter: #e7e9ef;
-  --ifm-color-secondary-lightest: #ffffff;
+  --ifm-color-secondary-lightest: #EEF1F6;
 
   --ifm-color-contrast: #000000;
   --ifm-color-contrast-dark: #000000;
@@ -27,11 +27,25 @@
   --ifm-color-contrast-lightest: #364563;
 
   /* Document */
+  --ifm-background-color: #fff;
   --ifm-font-family-base: "Roboto Mono";
   --ifm-heading-font-weight: 900;
   --ifm-code-font-size: 95%;
+  --ifm-color-content: var(--ifm-color-contrast);
+  --ifm-global-radius: 0.25rem;
 
   /* Navbar */
   --ifm-navbar-link-color: var(--ifm-color-primary);
   --ifm-navbar-link-hover-color: var(--ifm-color-contrast);
+  --ifm-navbar-padding-vertical: 16px;
+  --ifm-navbar-padding-horizontal: 32px;
+
+  /* Button */
+  --ifm-button-padding-vertical: 1rem;
+  --ifm-button-padding-horizontal: 1.6rem;
+
+  /* Footer */
+  --ifm-footer-padding-vertical: 1rem;
+  --ifm-footer-color: var(--ifm-color-secondary);
+  --ifm-footer-background-color: none;
 }

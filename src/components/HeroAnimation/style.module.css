@@ -1,0 +1,200 @@
+.HeroAnimation {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.Card {
+  --x1: 40px;
+  --x2: 213px;
+  --y1: 40px;
+  --y2: 136px;
+  --y3: 232px;
+  --duration: 8s;
+  --easing: cubic-bezier(0.22, 1, 0.36, 1);
+
+  position: relative;
+  min-width: 340px;
+  min-height: 340px;
+  background-color: var(--ifm-background-color);
+  border-radius: 24px;
+  box-shadow:
+    0 1.16px 2.21px rgba(0, 29, 180, 0.02),
+    0 2.8px 5.32px rgba(0, 29, 180, 0.02),
+    0 5.26px 10.01px rgba(0, 29, 180, 0.03),
+    0 9.39px 17.87px rgba(0, 29, 180, 0.04),
+    0 17.55px 33.42px rgba(0, 29, 180, 0.04),
+    0 42px 80px rgba(0, 29, 180, 0.06);
+
+  & > * {
+    border-radius: 8px;
+    height: 68px;
+    position: absolute;
+  }
+}
+
+.One {
+  background-color: var(--ifm-color-contrast-lightest);
+  inset: var(--y1) var(--x1) var(--y3) var(--x1);
+  animation: one var(--duration) infinite var(--easing);
+}
+
+.Two {
+  background-color: var(--ifm-color-primary);
+  inset: var(--y2) var(--x2) var(--y2) var(--x1);
+  animation: two var(--duration) infinite var(--easing);
+}
+
+.Three {
+  background-color: var(--ifm-color-contrast);
+  inset: var(--y2) var(--x1) var(--y2) var(--x2);
+  animation: three var(--duration) infinite var(--easing);
+}
+
+.Four {
+  background-color: var(--ifm-color-primary-lightest);
+  inset: var(--y3) var(--x1) var(--y1) var(--x1);
+  animation: four var(--duration) infinite var(--easing);
+}
+
+.BlobGrid {
+  position: absolute;
+  background-image: radial-gradient(var(--ifm-color-primary) 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  width: 400px;
+  height: 400px;
+  top: 0;
+  right: 30%;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation:
+    bubble-transform 20s ease-in-out infinite both alternate,
+    bubble-movement 40s ease-in-out infinite both;
+}
+
+@keyframes one {
+  16% {
+    inset: var(--y1) var(--x2) var(--y3) var(--x1);
+  }
+
+  32% {
+    inset: var(--y2) var(--x2) var(--y3) var(--x1);
+  }
+
+  48% {
+    inset: var(--y2) var(--x1) var(--y2) var(--x2);
+  }
+
+  64% {
+    inset: var(--y1) var(--x1) var(--y3) var(--x2);
+  }
+
+  80% {
+    inset: var(--y1) var(--x1) var(--y3) var(--x1);
+  }
+}
+@keyframes two {
+  16% {
+    inset: var(--y2) var(--x1) var(--y2) var(--x2);
+  }
+
+  32% {
+    inset: var(--y2) var(--x1) var(--y2) var(--x2);
+  }
+
+  48% {
+    inset: var(--y3) var(--x1) var(--y1) var(--x2);
+  }
+
+  64% {
+    inset: var(--y3) var(--x1) var(--y1) var(--x1);
+  }
+
+  80% {
+    inset: var(--y3) var(--x2) var(--y1) var(--x1);
+  }
+}
+@keyframes three {
+  16% {
+    inset: var(--y1) var(--x1) var(--y3) var(--x2);
+  }
+
+  32% {
+    inset: var(--y1) var(--x1) var(--y3) var(--x1);
+  }
+
+  48% {
+    inset: var(--y1) var(--x2) var(--y3) var(--x1);
+  }
+
+  64% {
+    inset: var(--y2) var(--x2) var(--y2) var(--x1);
+  }
+
+  80% {
+    inset: var(--y2) var(--x1) var(--y2) var(--x1);
+  }
+}
+@keyframes four {
+  16% {
+    inset: var(--y3) var(--x2) var(--y1) var(--x1);
+  }
+
+  32% {
+    inset: var(--y3) var(--x2) var(--y1) var(--x1);
+  }
+
+  48% {
+    inset: var(--y2) var(--x2) var(--y2) var(--x1);
+  }
+
+  64% {
+    inset: var(--y2) var(--x1) var(--y2) var(--x2);
+  }
+
+  80% {
+    inset: var(--y3) var(--x1) var(--y1) var(--x2);
+  }
+}
+@keyframes bubble-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+@keyframes bubble-movement {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(20%) rotateY(10deg);
+  }
+}
+

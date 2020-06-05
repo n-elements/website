@@ -1,37 +1,42 @@
-/* stylelint-disable docusaurus/copyright-header */
+@import url('../css/media.css');
 
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
+.Herobanner {
+  height: min(650px, 100vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 0 180px;
+  width: min(100%, 1600px);
+  margin: 0 auto;
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+
+.AnimationContainer {
+  position: relative;
+  flex-grow: 1;
+  z-index: -1;
+
+  & > * {
+    position: absolute;
+    left: 30%;
+    top: 50px;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Tagline {
+  font-size: 1.5rem;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.DisplayTitle {
+  font-size: 5rem;
+  margin-bottom: 0;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.CTAs {
+  margin-block-start: 64px;
+  display: inline-grid;
+  grid-gap: 24px;
+  grid-auto-flow: column dense;
 }
+
