@@ -1,0 +1,37 @@
+
+:root {
+
+  /* Color Palettes */
+  --ifm-color-primary: #0057ff;
+  --ifm-color-primary-dark: #004ee6;
+  --ifm-color-primary-darker: #004ad9;
+  --ifm-color-primary-darkest: #003db3;
+  --ifm-color-primary-light: #1a68ff;
+  --ifm-color-primary-lighter: #2670ff;
+  --ifm-color-primary-lightest: #4d89ff;
+
+  --ifm-color-secondary: #c2c9d6;
+  --ifm-color-secondary-dark: #aab3c6;
+  --ifm-color-secondary-darker: #9da9bd;
+  --ifm-color-secondary-darkest: #7988a5;
+  --ifm-color-secondary-light: #dadfe6;
+  --ifm-color-secondary-lighter: #e7e9ef;
+  --ifm-color-secondary-lightest: #ffffff;
+
+  --ifm-color-contrast: #000000;
+  --ifm-color-contrast-dark: #000000;
+  --ifm-color-contrast-darker: #000000;
+  --ifm-color-contrast-darkest: #000000;
+  --ifm-color-contrast-light: #121721;
+  --ifm-color-contrast-lighter: #242E42;
+  --ifm-color-contrast-lightest: #364563;
+
+  /* Document */
+  --ifm-font-family-base: "Roboto Mono";
+  --ifm-heading-font-weight: 900;
+  --ifm-code-font-size: 95%;
+
+  /* Navbar */
+  --ifm-navbar-link-color: var(--ifm-color-primary);
+  --ifm-navbar-link-hover-color: var(--ifm-color-contrast);
+}

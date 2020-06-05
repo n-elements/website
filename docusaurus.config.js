@@ -1,3 +1,6 @@
+const path = require('path');
+const package = require('./package.json');
+
 module.exports = {
   title: 'Native Elements',
   tagline: 'HTML elements with CSS superpowers',
@@ -6,7 +9,14 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'n-elements',
   projectName: 'website',
+  plugins: [
+    path.resolve(__dirname, 'plugins/custom-webpack-plugin')
+  ],
+  customFields: {
+    version: package.version,
+  },
   themeConfig: {
+    disableDarkMode: true,
     navbar: {
       title: '',
       logo: {
@@ -33,53 +43,8 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      style: 'light',
+      copyright: `Copyright © ${new Date().getFullYear()} Native Elements is made by Mattia Astorino & Paolo Roth`,
     },
   },
   presets: [
@@ -87,18 +52,11 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/main.css'),
         },
       },
     ],
