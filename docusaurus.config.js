@@ -20,7 +20,7 @@ module.exports = {
     disableDarkMode: true,
     image: 'img/share-image.png',
     prism: {
-      theme: require('prism-react-renderer/themes/nightOwlLight')
+      theme: require('prism-react-renderer/themes/nightOwl')
     },
     navbar: {
       title: '',
@@ -50,7 +50,7 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      copyright: `<strong style="vertical-align: super;">Supported by: </strong><a href="https://a.paddle.com/v2/click/16413/37697?link=1227" target="_blank" data-hide-icon><img src="https://img.shields.io/badge/VSCode%20Power%20User-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a> <a href="https://a.paddle.com/v2/click/16413/37697?link=2345" target="_blank" data-hide-icon><img src="https://img.shields.io/badge/Node%20Cli.com%20-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/></a><br />&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a> and <a href="https://twitter.com/iamoctod" target="_blank" rel="noopener noreferrer" data-hide-icon>@iamoctod</a>`,
+      copyright: `<small style="vertical-align: super;">Supported by: </small><a href="https://a.paddle.com/v2/click/16413/37697?link=1227" target="_blank" data-hide-icon><img src="https://img.shields.io/badge/VSCode%20Power%20User-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a> <a href="https://a.paddle.com/v2/click/16413/37697?link=2345" target="_blank" data-hide-icon><img src="https://img.shields.io/badge/Node%20Cli.com%20-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/></a><br />&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a> and <a href="https://twitter.com/iamoctod" target="_blank" rel="noopener noreferrer" data-hide-icon>@iamoctod</a>`,
     },
   },
   presets: [

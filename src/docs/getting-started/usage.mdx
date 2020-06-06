@@ -1,0 +1,39 @@
+---
+id: usage
+title: Usage
+---
+
+You can use Native Elements in different ways, depend on which level of customization and optimization you want.
+
+## Using CDN
+
+The easiest way is to include the compiled version of the library directly in your page, using a CDN service like <a href="https://www.jsdelivr.com/" taarget="_blank" rel="noopner noreferrer">JsDelivr</a>:
+
+```html
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core/dist/native-elements.min.css">
+```
+
+You will get the whole library including the style for all the HTML elements, even if you're not using it on your page. This method is really useful to fast build prototypes and simple websites. <br />Just plug-n-customise.
+
+## Using postcss-import-url
+
+If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url)  plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
+
+```css
+@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@latest/dist/native-elements.min.css';
+```
+
+:::note
+Replace the `latest` keyword with a specific version to avoid inconsistencies between builds and releases.
+:::
+
+Using this approach you avoid the HTTP request to the CDN and you will be able to handle the final output as you want.
+
+## From source
+
+To use the library source and unleash the full potentiality you have to use a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">NPM</a> or <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">YARN</a>, and then run this command inside your project:
+
+```sh
+yarn add @native-elements/core
+```
