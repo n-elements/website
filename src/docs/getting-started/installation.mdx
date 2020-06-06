@@ -1,0 +1,102 @@
+---
+id: installation
+title: Installation
+---
+
+You can use Native Elements in different ways, depend on which level of customization and optimization you want.
+
+## Using CDN
+
+The easiest way is to include the compiled version of the library directly in your page, using a CDN service like <a href="https://www.jsdelivr.com/" taarget="_blank" rel="noopner noreferrer">JsDelivr</a>:
+
+```html
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core@latest/dist/native-elements.min.css">
+```
+
+You will get the whole library including the style for all the HTML elements, even if you're not using it on your page. This method is really useful to fast build prototypes and simple websites. <br />Just plug-n-customise.
+
+## Using postcss-import-url
+
+If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url)  plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
+
+```css
+@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@latest/dist/native-elements.min.css';
+```
+
+Using this approach you avoid the HTTP request to the CDN and you will be able to handle the final output as you want.
+
+## From source
+
+To use the library source and unleash the full potentiality you have to use a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a> , and then install all the required packages inside your project:
+
+```sh
+yarn add @native-elements/core camelcase postcss-easy-import postcss-preset-env postcss-mixins cssnano cssnano-preset-advanced
+```
+
+You need now to tell PostCSS to use the plugins required by Native Elements, here the configuration file with the settings:
+
+**postcss.config.js**
+```js
+const path = require('path');
+const camelCase = require('camelcase');
+const variables = require('@native-elements/core/dist/props');
+
+/*
+ * Parse variables files and prepare
+ * to use them as env variables
+*/
+const envVariables = {
+  environmentVariables: Object.keys(variables).reduce((props, key) => {
+    let prop = variables[key];
+    let normalizedName = prop.name.replace('--ne-', '');
+    let newKey = `--${camelCase(normalizedName)}`;
+    props[newKey] = `${prop.tokenValue}`;
+    return props;
+  }, {}),
+};
+
+module.exports = {
+  plugins: {
+    'postcss-easy-import': {
+      extensions: '.pcss'
+    },
+    'postcss-preset-env': {
+      stage: 0,
+      features: {
+        'logical-properties-and-values': {
+          preserve: true
+        }
+      },
+      importFrom: [
+        envVariables,
+      ],
+      insertAfter: {
+        'custom-media-queries': require('postcss-mixins')({
+          mixinsFiles: path.join(
+            process.cwd(),
+            'node_modules/@native-elements/core/dist/elements',
+            '_*.pcss'
+          )
+        })
+      }
+    },
+    cssnano: {
+      preset: [
+        'advanced',
+        {
+          discardComments: {
+            removeAll: true
+          },
+          reduceIdents: false,
+          autoprefixer: false
+        }
+      ]
+    }
+  }
+};
+```
+
+:::note
+We don't encourage using this approach if you not know very well what you are doing.
+:::
