@@ -1,6 +1,6 @@
 /* Typography */
 
-a[href^='https://']::after {
+a[target="_blank"]:not([data-hide-icon])::after {
   content: '';
   display: inline-block;
   width: 12px;

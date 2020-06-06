@@ -30,6 +30,7 @@ function Home() {
                 className="button button--secondary"
                 href="https://native-elements.netlify.app/"
                 rel="noopener noreferrer"
+                data-hide-icon
                 target="_blank"
               >
                 Build your theme
