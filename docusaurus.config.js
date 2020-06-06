@@ -20,7 +20,7 @@ module.exports = {
     disableDarkMode: true,
     image: 'img/share-image.png',
     prism: {
-      theme: require('prism-react-renderer/themes/nightOwl')
+      theme: require('prism-react-renderer/themes/nightOwlLight')
     },
     navbar: {
       title: '',

@@ -36,7 +36,7 @@ To use the library source and unleash the full potentiality you have to use a pa
 yarn add @native-elements/core
 ```
 
-You can then import the `core` file module from within `CSS` or `JS`:
+You can then import the **core** file module from within **CSS** or **JS**:
 
 
 <Tabs
@@ -66,7 +66,11 @@ import '@native-elements/core'
 
 ### Compiling source
 
-You need now to tell PostCSS to use the plugins required by Native Elements, here the configuration file with the settings:
+:::note
+We don't encourage using this approach if you not know very well what you are doing.
+:::
+
+You need now to tell PostCSS to use the plugins required by Native Elements, here the full configuration file with the settings:
 
 ```js title="postcss.config.js"
 const path = require('path');
@@ -75,7 +79,7 @@ const variables = require('@native-elements/core/dist/props');
 
 /*
  * Parse variables files and prepare
- * to use them as env variables
+ * to use them as env() variables
 */
 const envVariables = {
   environmentVariables: Object.keys(variables).reduce((props, key) => {
@@ -134,6 +138,3 @@ Once set this, you are able to import single `.pcss` files from within your code
 @import '@native-elements/core/dist/elements/ne-button/ne-button';
 ```
 
-:::note
-We don't encourage using this approach if you not know very well what you are doing.
-:::
