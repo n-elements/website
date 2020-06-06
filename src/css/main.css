@@ -1,5 +1,5 @@
 
-@import url('./settings.css');
-@import url('./overrides.css');
-@import url('./font-families.css');
+@import './font-families.css';
+@import './settings.css';
+@import './overrides.css';
 

@@ -2,6 +2,8 @@
 id: installation
 title: Installation
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 You can use Native Elements in different ways, depend on which level of customization and optimization you want.
 
@@ -26,18 +28,47 @@ If you're already using <a href="https://postcss.org/" target="_blank" rel="noop
 
 Using this approach you avoid the HTTP request to the CDN and you will be able to handle the final output as you want.
 
-## From source
+## With a package manager
 
-To use the library source and unleash the full potentiality you have to use a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a> , and then install all the required packages inside your project:
+To use the library source and unleash the full potentiality you have to use a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a> , and then install the package:
 
 ```sh
-yarn add @native-elements/core camelcase postcss-easy-import postcss-preset-env postcss-mixins cssnano cssnano-preset-advanced
+yarn add @native-elements/core
 ```
+
+You can then import the `core` file module from within `CSS` or `JS`:
+
+
+<Tabs
+  defaultValue="js"
+  values={[
+    { label: 'CSS', value: 'css', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="css">
+
+```css
+/* Will use "postcss-easy-import" installed with the core package. */
+@import '@native-elements/core/dist/native-elements.css';
+```
+
+</TabItem>
+<TabItem value="js">
+
+```js
+/* Resolve to @native-elements/core/dist/native-elements.css */
+import '@native-elements/core'
+```
+
+</TabItem>
+</Tabs>
+
+### Compiling source
 
 You need now to tell PostCSS to use the plugins required by Native Elements, here the configuration file with the settings:
 
-**postcss.config.js**
-```js
+```js title="postcss.config.js"
 const path = require('path');
 const camelCase = require('camelcase');
 const variables = require('@native-elements/core/dist/props');
@@ -75,7 +106,7 @@ module.exports = {
         'custom-media-queries': require('postcss-mixins')({
           mixinsFiles: path.join(
             process.cwd(),
-            'node_modules/@native-elements/core/dist/elements',
+            'node_modules/@native-elements/core/dist/elements/**',
             '_*.pcss'
           )
         })
@@ -95,6 +126,12 @@ module.exports = {
     }
   }
 };
+```
+
+Once set this, you are able to import single `.pcss` files from within your code using postcss-easy-import, and compile it with your build process.
+
+```css
+@import '@native-elements/core/dist/elements/ne-button/ne-button';
 ```
 
 :::note
