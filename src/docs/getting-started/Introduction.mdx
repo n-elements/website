@@ -1,12 +1,53 @@
 ---
 id: introduction
 title: Introduction
+hide_table_of_contents: true
 ---
+import { Layout } from '@site/src/components/Layout';
+import { Spacer } from '@site/src/components/Spacer';
 
-Native Elements is not a CSS framework. You can consider it as customizable plug-n-play library for your site which helps you styling all the available (and stilizable) HTML elements.
+Native Elements is not a CSS framework, no bundlers required or tons of configurations to set. You can consider it as customizable plug-n-play library for your site which helps you styling all the available (and stilizable) HTML elements using CSS custom properties, classes or whatever you want. You can also build your own class-based CSS framework on top of it.
 
-If you're targetting only **modern and secure** web browsers can Native Elements helps you saving time when building websites.
+If you're working on projects for **modern and secure web browsers**, Native Elements can helps you saving time writing CSS.
 
-```sh
-yarn add @native-elements/core
-```
+## Features
+
+This library is built using modern CSS feature and best practices, the compiled version supports only the latest two Chrome, Safari, Firefox and Edge versions and this is possible thanks to <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a>
+
+<Spacer height="40px" />
+
+<Layout display="grid" direction="horizontal" align="start" repeat="fit" gap="40px">
+  <div>
+    <h3>Modern</h3>
+    <p><small>
+      Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a> takes advantage of exciting new CSS features, like custom and logical properties. If you use the source version, you can use custom selectors and mixins to make styling even easier.</small>
+    </p>
+  </div>
+  <div>
+    <h3>Modular</h3>
+    <p><small>In the age of Flexbox, CSS grid, and other exciting layout features, there is less and less need for a bloated CSS framework. What you do need is a simple foundation on top of which to build your own styles.</small></p>
+  </div>
+</Layout>
+
+<Spacer height="80px" />
+
+<Layout display="grid" direction="horizontal" align="start" repeat="fit" gap="40px">
+  <div>
+    <h3>Framework agnostic</h3>
+    <p><small>
+        If you're using the compiled version, just drop it inside your application main style. It's just CSS, so it works with <a href="https://reactjs.org"
+           rel="noopener noreferrer"
+           target="_blank">React</a>, <a href="https://vuejs.org/"
+           rel="noopener noreferrer"
+           target="_blank">Vue</a>, <a href="https://angular.io/"
+           rel="noopener noreferrer"
+           target="_blank">Angular</a> and <a href="https://svelte.dev/"
+           rel="noopener noreferrer"
+           target="_blank">Svelte.</a></small></p>
+  </div>
+  <div>
+    <h3>Easy theming</h3>
+    <p><small>Drop Native Elements into your project and let it take care of basic button, input and other element styling so you can focus on what's important. You can create your own theme easily with our <a href="https://native-elements.netlify.app/editor/colours" rel="noopener noreferrer" target="_blank">theme builder app</a></small></p>
+  </div>
+</Layout>
+

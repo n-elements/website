@@ -46,6 +46,7 @@
   --ifm-background-color: #fff;
   --ifm-color-content: var(--ifm-color-contrast-lightest);
   --ifm-font-family-base: "Roboto";
+  --ifm-font-size-base: 1.1rem;
   --ifm-heading-font-weight: 700;
   --ifm-heading-color: var(--ifm-color-contrast);
   --ifm-code-font-size: 95%;

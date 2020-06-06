@@ -10,18 +10,24 @@ module.exports = {
   organizationName: 'n-elements',
   projectName: 'website',
   plugins: [
-    path.resolve(__dirname, 'plugins/custom-webpack-plugin')
+    path.resolve(__dirname, 'plugins/custom-webpack-plugin'),
+    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/')
   ],
   customFields: {
     version: package.version,
   },
   themeConfig: {
     disableDarkMode: true,
+    image: 'img/share-image.png',
+    prism: {
+      theme: require('prism-react-renderer/themes/nightOwlLight')
+    },
     navbar: {
       title: '',
       logo: {
         alt: 'Native Elements',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       links: [
         {
