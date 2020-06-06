@@ -50,7 +50,8 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      copyright: `&copy; ${new Date().getFullYear()} Native Elements is made by Mattia Astorino & Paolo Roth`,
+      copyright: `&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio">@equinusocio</a> & <a href="https://twitter.com/iamoctod">@iamoctod
+      </a>`,
     },
   },
   presets: [

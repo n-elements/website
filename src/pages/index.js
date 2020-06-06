@@ -21,13 +21,13 @@ function Home() {
 
             <div className={styles.CTAs}>
               <Link
-                className="button button--primary button--lg"
+                className="button button--primary"
                 to={useBaseUrl('docs/')}
               >
                 Getting Started
               </Link>
               <a
-                className="button button--secondary button--lg"
+                className="button button--secondary"
                 href="https://native-elements.netlify.app/"
                 rel="noopener noreferrer"
                 target="_blank"

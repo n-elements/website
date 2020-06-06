@@ -36,7 +36,6 @@ a[href^='https://']::after {
 /* Buttons */
 
 .button {
-  --ifm-button-size-multiplier: 1.2;
   line-height: 1;
   text-transform: uppercase;
 }

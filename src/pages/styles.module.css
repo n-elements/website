@@ -54,6 +54,7 @@
   margin-block-start: 64px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 
   & > * + * {
     margin-top: 24px;
