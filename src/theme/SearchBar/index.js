@@ -105,6 +105,8 @@ const Search = (props) => {
         dispaly: 'block',
         marginLeft: 24,
         color: '#C2C9D6',
+        display: 'inline-block',
+        verticalAlign: 'sub',
       }}
       >
         v

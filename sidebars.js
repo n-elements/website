@@ -3,8 +3,7 @@ module.exports = {
     'Getting Started': [
       'getting-started/introduction',
       'getting-started/installation',
-      'getting-started/usage',
     ],
-    Elements: ['elements/button'],
+    Usage: ['usage/customization'],
   },
 };

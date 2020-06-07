@@ -1,0 +1,146 @@
+---
+id: customization
+title: Customization
+---
+import { Canvas } from '@site/src/components/Canvas';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Native Elements style targets HTML elements by the tag name, this means for example that if you change the custom properties of the `ne-button` element at the `root` level, every `<button>` will use the same style across the website.
+
+This is the default behavior designed to fit the most simple use case, and of course, it has some limitations, like the impossibility to create different styles of the same element, but here is where custom properties help you.
+
+## Variants
+
+If you need to create multiple variants of the same element, you can use the custom properties cascade to create your selectors to define elements variants, let's see an example.
+
+This is the default button
+
+<Canvas>
+  <button type="button">Default button</button>
+</Canvas>
+
+```html
+  <button type="button">Default button</button>
+```
+
+Assuming now you want to create a full rounded and outlined secondary button, first you need create the selector using a class or attribute. Let's create our `secondary` button.
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+    { label: 'CSS', value: 'css', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas style="button[data-type*='secondary'] {
+      --ne-button-background: transparent;
+      --ne-button-border: 2px solid black;
+      --ne-button-foreground: black;
+      --ne-button-hover-background: transparent;
+      --ne-button-hover-border: 2px solid black;
+      --ne-button-hover-foreground: #05f;
+      --ne-button-active-background: transparent;
+      --ne-button-active-border: 2px solid #05f;
+      --ne-button-active-foreground: #05f;
+      --ne-button-border-radius: 100px;
+    }"
+  ><button type="button" data-type='secondary'>Secondary button</button></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<button type="button" data-type='secondary'>Secondary button</button>
+```
+
+</TabItem>
+<TabItem value="css">
+
+```css
+button[data-type*='secondary'] {
+  /* Resting */
+  --ne-button-background: transparent;
+  --ne-button-border: 2px solid black;
+  --ne-button-foreground: black;
+  --ne-button-border-radius: 100px;
+
+  /* Hover status */
+  --ne-button-hover-background: transparent;
+  --ne-button-hover-border: 2px solid black;
+  --ne-button-hover-foreground: #05f;
+
+  /* Focus status */
+  --ne-button-active-background: transparent;
+  --ne-button-active-border: 2px solid #05f;
+  --ne-button-active-foreground: #05f;
+}
+```
+
+</TabItem>
+</Tabs>
+
+This is just an example of how versatile is this library. You are not binded to a special syntax or naming convention. Takes our previous example and a let's make it bolder and uppercase:
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+    { label: 'CSS', value: 'css', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas style="button[data-type*='secondary'] {
+      --ne-button-background: transparent;
+      --ne-button-border: 2px solid black;
+      --ne-button-foreground: black;
+      --ne-button-hover-background: transparent;
+      --ne-button-hover-border: 2px solid black;
+      --ne-button-hover-foreground: #05f;
+      --ne-button-active-background: transparent;
+      --ne-button-active-border: 2px solid #05f;
+      --ne-button-active-foreground: #05f;
+      --ne-button-border-radius: 100px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }"
+  ><button type="button" data-type='secondary'><b>Secondary button</b></button></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<button type="button" data-type='secondary'>Secondary button</button>
+```
+
+</TabItem>
+<TabItem value="css">
+
+```css
+button[data-type*='secondary'] {
+  /* Resting */
+  --ne-button-background: transparent;
+  --ne-button-border: 2px solid black;
+  --ne-button-foreground: black;
+  --ne-button-border-radius: 100px;
+
+  /* Hover status */
+  --ne-button-hover-background: transparent;
+  --ne-button-hover-border: 2px solid black;
+  --ne-button-hover-foreground: #05f;
+
+  /* Focus status */
+  --ne-button-active-background: transparent;
+  --ne-button-active-border: 2px solid #05f;
+  --ne-button-active-foreground: #05f;
+
+  text-transform: uppercase;
+  font-weight: 700;
+}
+```
+
+</TabItem>
+</Tabs>
+
+## Resetting

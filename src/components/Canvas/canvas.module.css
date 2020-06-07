@@ -1,0 +1,12 @@
+.Canvas {
+  margin: var(--ifm-leading) 0 var(--ifm-leading);
+
+  /* stylelint-disable */
+  border: 1px solid var(--ifm-color-secondary-lightest) !important;
+  width: 100%;
+  display: block;
+}
+
+ul + div > div > .Canvas {
+  margin: -1rem 0;
+}

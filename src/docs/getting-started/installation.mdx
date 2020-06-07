@@ -4,6 +4,7 @@ title: Installation
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { Spacer } from '@site/src/components/Spacer';
 
 You can use Native Elements in different ways, depend on which level of customization and optimization you want.
 
@@ -30,7 +31,7 @@ Using this approach you avoid the HTTP request to the CDN and you will be able t
 
 ## With a package manager
 
-To use the library source and unleash the full potentiality you have to use a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a> , and then install the package:
+First you need a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a>, then install the package locally inside your project:
 
 ```sh
 yarn add @native-elements/core
@@ -43,7 +44,7 @@ You can then import the **compiled** file from within **CSS** or **JS**:
   defaultValue="js"
   values={[
     { label: 'CSS', value: 'css', },
-    { label: 'JavaScript', value: 'js', },
+    { label: 'JS', value: 'js', },
   ]
 }>
 <TabItem value="css">
@@ -64,13 +65,15 @@ import '@native-elements/core';
 </TabItem>
 </Tabs>
 
+<Spacer height="40px" />
+
 ### Compiling source
 
 :::note
-We don't encourage using this approach if you not know very well what you are doing.
+We don't encourage using this method if you don't know very well what you are doing.
 :::
 
-You need now to tell PostCSS to use the plugins required by Native Elements, here the full configuration file with the settings:
+If you want to go this way and unleash the full potentiality, you need configure PostCSS to use the plugins required by Native Elements (required plugins are installed with the main package), here the full configuration file with the settings:
 
 ```js title="postcss.config.js"
 const path = require('path');
@@ -134,7 +137,14 @@ module.exports = {
 
 Once set this, you are able to import single `.pcss` files from within your code using postcss-easy-import, and compile it with your build process.
 
-```css title="components/button/button.css"
+```css title="app.css"
+@import '@native-elements/core/dist/elements/core/core';
+```
+
+```css title="components/my-button.css"
 @import '@native-elements/core/dist/elements/ne-button/ne-button';
 ```
 
+:::note
+You need to import `core` to get the style applied to the document, like selection color, base font-size, etc...
+:::
