@@ -6,13 +6,13 @@ import { Canvas } from '@site/src/components/Canvas';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Native Elements style targets HTML elements by the tag name, this means for example that if you change the custom properties of the `ne-button` element at the `root` level, every `<button>` will use the same style across the website.
+Native Elements style targets HTML elements by the tag name, this means that if you change the elements custom properties at the `root` level, they will'be applied across the whole page.
 
 This is the default behavior designed to fit the most simple use case, and of course, it has some limitations, like the impossibility to create different styles of the same element, but here is where custom properties help you.
 
 ## Variants
 
-If you need to create multiple variants of the same element, you can use the custom properties cascade to create your selectors to define elements variants, let's see an example.
+If you need to create multiple variants of the same element, you can create your selectors and use the custom properties cascade to define elements variants. Let's see an example.
 
 This is the default button
 
@@ -35,7 +35,7 @@ Assuming now you want to create a full rounded and outlined secondary button, fi
   ]
 }>
 <TabItem value="result">
-  <Canvas style="button[data-type*='secondary'] {
+  <Canvas style="button[data-type='secondary'] {
       --ne-button-background: transparent;
       --ne-button-border: 2px solid black;
       --ne-button-foreground: black;
@@ -59,7 +59,7 @@ Assuming now you want to create a full rounded and outlined secondary button, fi
 <TabItem value="css">
 
 ```css
-button[data-type*='secondary'] {
+button[data-type='secondary'] {
   /* Resting */
   --ne-button-background: transparent;
   --ne-button-border: 2px solid black;
@@ -92,7 +92,7 @@ This is just an example of how versatile is this library. You are not binded to 
   ]
 }>
 <TabItem value="result">
-  <Canvas style="button[data-type*='secondary'] {
+  <Canvas style="button[data-type='secondary'] {
       --ne-button-background: transparent;
       --ne-button-border: 2px solid black;
       --ne-button-foreground: black;
@@ -118,7 +118,7 @@ This is just an example of how versatile is this library. You are not binded to 
 <TabItem value="css">
 
 ```css
-button[data-type*='secondary'] {
+button[data-type='secondary'] {
   /* Resting */
   --ne-button-background: transparent;
   --ne-button-border: 2px solid black;
