@@ -6,7 +6,3 @@
   width: 100%;
   display: block;
 }
-
-ul + div > div > .Canvas {
-  margin-top: -1rem;
-}

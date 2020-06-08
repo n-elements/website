@@ -22,7 +22,7 @@ export default function HeroAnimation({ className }) {
           return (
             <div
               className={styles.Bullet}
-              key={index + l}
+              key={Math.random()}
               style={{
                 '--delay': `${index / 10}s`,
 
@@ -47,7 +47,7 @@ export default function HeroAnimation({ className }) {
           return (
             <div
               className={styles.Cross}
-              key={index + h}
+              key={Math.random()}
               style={{
                 '--delay': `${index / 10}s`,
 

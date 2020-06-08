@@ -24,7 +24,7 @@ This is the default button
   <button type="button">Default button</button>
 ```
 
-Assuming now you want to create a full rounded and outlined secondary button, first you need create the selector using a class or attribute. Let's create our `secondary` button.
+Assuming now you want to create a full rounded and outlined secondary button, first you need create the selector using a class or attribute. Let's create it.
 
 <Tabs
   defaultValue="result"
@@ -135,6 +135,7 @@ button[data-type*='secondary'] {
   --ne-button-active-border: 2px solid #05f;
   --ne-button-active-foreground: #05f;
 
+  /* Custom style */
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -143,4 +144,63 @@ button[data-type*='secondary'] {
 </TabItem>
 </Tabs>
 
-## Resetting
+## Overrides
+
+In some cases, you may want to override some property to make something special like applying masks or making special hover effects. You can just add the property or state you want to override:
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+    { label: 'CSS', value: 'css', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas style="
+.MySpecialButton {
+  --ne-button-background: linear-gradient(270deg, #00ffbd, #d000ff, #00ffbd);
+  --ne-button-hover-background: linear-gradient(270deg, #00ffbd, #d000ff, #00ffbd);
+  background-size: 400% 400%;
+}
+.MySpecialButton:hover {
+  background-size: 400% 400%;
+  animation: Hover 1s ease-out 1;
+  animation-fill-mode: forwards;
+}
+@keyframes Hover {
+  0% { background-position: 0% 50% }
+  100% { background-position: 100% 50% }
+}"><button type="button" class="MySpecialButton">Default button</button></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<button type="button" class="MySpecialButton">Default button</button>
+```
+
+</TabItem>
+<TabItem value="css">
+
+```css
+.MySpecialButton {
+  --ne-button-background: linear-gradient(270deg, #00ffbd, #d000ff, #00ffbd);
+  --ne-button-hover-background: linear-gradient(270deg, #00ffbd, #d000ff, #00ffbd);
+
+  background-size: 400% 400%;
+}
+.MySpecialButton:hover {
+  background-size: 400% 400%;
+  animation: Hover 1s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Hover {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+```
+
+</TabItem>
+</Tabs>
