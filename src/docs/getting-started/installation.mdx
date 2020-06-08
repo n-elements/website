@@ -135,6 +135,17 @@ module.exports = {
 };
 ```
 
+Add your browserslist targets via `.browserslistrc` file or inside `package.json`:
+
+```json
+"browserslist": [
+  "last 1 Chrome versions",
+  "last 1 Firefox versions",
+  "last 1 Safari versions",
+  "last 1 Edge versions"
+]
+```
+
 Once set this, you are able to import single `.pcss` files from within your code using postcss-easy-import, and compile it with your build process.
 
 ```css title="app.css"
