@@ -1,0 +1,46 @@
+---
+id: customattributes
+title: Custom attributes
+---
+import { Canvas } from '@site/src/components/Canvas';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Some elements can be composed to build a group that needs some visual adjustments. Native Elements do this following HTML custom attributes. Here you will find the full list of all the custom attributes you can use and which elements can accept it.
+
+### ne-details-group
+
+Can be applied to a container to create a group of `<details>` elements with separators.
+
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas height={850}><div ne-details-group="true"><details><summary>My address details</summary><div style={{padding: '0 32px'}}><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p></div></details><details><summary>My address details</summary><div style={{padding: '32px'}}><img alt="" src="https://images.unsplash.com/photo-1577898485757-7c8e111a32a2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80" /><small>Photo by <a href="https://unsplash.com/@equinusocio" target="_blank" rel="noopener noreferrer">Mattia Astorino</a></small></div></details><details><summary>My details extended</summary><div style={{padding: '0 32px'}}><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p></div></details></div></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<div ne-details-group>
+  <details>
+    <summary>My address details</summary>
+    <!-- ... -->
+  </details>
+  <details>
+    <summary>My address details</summary>
+    <!-- ... -->
+  </details>
+  <details>
+    <summary>My details extended</summary>
+    <!-- ... -->
+  </details>
+</div>
+```
+
+</TabItem>
+</Tabs>

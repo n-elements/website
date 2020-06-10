@@ -4,6 +4,9 @@ module.exports = {
       'getting-started/introduction',
       'getting-started/installation',
     ],
-    Usage: ['usage/customization'],
+    Usage: [
+      'usage/customization',
+      'usage/customattributes',
+    ],
   },
 };

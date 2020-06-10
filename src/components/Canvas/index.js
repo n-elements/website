@@ -4,7 +4,11 @@ import clsx from 'clsx';
 import styles from './canvas.module.css';
 
 export function Canvas({
-  children, style, className, ...attributes
+  children,
+  height,
+  style,
+  className,
+  ...attributes
 }) {
   const head = `
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -28,6 +32,7 @@ export function Canvas({
   return (
     <PortalFrame
       className={clsx(styles.Canvas, className)}
+      style={{ height: height ? `${height}px` : 'auto', }}
       head={head}
       {...attributes}
     >
