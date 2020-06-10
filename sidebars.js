@@ -7,6 +7,8 @@ module.exports = {
     Usage: [
       'usage/customization',
       'usage/customattributes',
+      'usage/themes',
+      'usage/outline',
     ],
   },
 };
