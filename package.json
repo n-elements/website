@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.56",
-    "@docusaurus/plugin-google-analytics": "2.0.0-alpha.37",
     "@docusaurus/preset-classic": "^2.0.0-alpha.56",
     "@native-elements/core": "1.0.0",
     "clsx": "1.1.1",

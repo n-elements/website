@@ -11,8 +11,7 @@ module.exports = {
   projectName: 'website',
   plugins: [
     path.resolve(__dirname, 'plugins/custom-webpack-plugin'),
-    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/'),
-    '@docusaurus/plugin-google-analytics'
+    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/')
   ],
   customFields: {
     version: package.version,
