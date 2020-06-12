@@ -4,7 +4,7 @@ const package = require('./package.json');
 module.exports = {
   title: 'Native Elements',
   tagline: 'HTML elements with CSS superpowers.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://native-elements.dev',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'n-elements',
@@ -37,7 +37,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://native-elements.netlify.app',
+          href: 'https://app.native-elements.dev',
           label: 'Theme Builder',
           position: 'right',
         },
