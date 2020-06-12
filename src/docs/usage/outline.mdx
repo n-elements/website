@@ -3,6 +3,7 @@ id: outline
 title: Outline
 ---
 import { Canvas } from '@site/src/components/Canvas';
+import { Spacer } from '@site/src/components/Spacer';
 
 Native Elements adds by default the outline indicator to any focusable elements when they are on `:focus` state.
 
@@ -10,9 +11,20 @@ Since the outline indicator is useful for the keyboard and AT navigation, you sh
 
 ```css
 
-[data-whatintent='mouse'] *:focus {
+[data-whatintent='mouse'] *:focus,
+[data-whatintent='touch'] *:focus {
   outline: none;
 }
 ```
 
-By this way, thanks to what-input which will add `[data-whatintent='mouse']` to the `html` element, the outline indicator will be visible only when users will use the keyboard as input to navigate through the page.
+By this way, thanks to what-input which will add `[data-whatintent='mouse']` and `[data-whatintent='touch']` to the `html` element, the outline indicator will be visible only when users will use the keyboard as input to navigate through the page.
+
+**Try it:**
+
+<Canvas height={180}>
+  <button type="button">Default button</button>{' '}
+  <button type="button">Default button</button>
+  <br /><br />
+  <input type="color" value="#606fdc" />{' '}
+  <input type="color" value="#70e7bd" />
+</Canvas>

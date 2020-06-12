@@ -20,12 +20,12 @@ export function Canvas({
         padding: 24px;
       }
 
-      [data-whatintent="mouse"] :focus,
-      [data-whatintent="mouse"] :visited:focus {
+      [data-whatintent="mouse"] *:focus,
+      [data-whatintent="touch"] *:focus {
         outline: none;
       }
 
-      ${style}
+      ${style || ''}
     </style>
   `;
 
