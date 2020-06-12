@@ -11,7 +11,8 @@ module.exports = {
   projectName: 'website',
   plugins: [
     path.resolve(__dirname, 'plugins/custom-webpack-plugin'),
-    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/')
+    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/'),
+    '@docusaurus/plugin-google-analytics'
   ],
   customFields: {
     version: package.version,
@@ -19,6 +20,10 @@ module.exports = {
   themeConfig: {
     disableDarkMode: true,
     image: 'img/share-image.png',
+    googleAnalytics: {
+      trackingID: 'UA-167955942-2',
+      anonymizeIP: true,
+    },
     prism: {
       theme: require('prism-react-renderer/themes/nightOwlLight')
     },
