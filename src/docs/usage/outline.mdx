@@ -4,8 +4,15 @@ title: Outline
 ---
 import { Canvas } from '@site/src/components/Canvas';
 
-Some elements can be composed to build a group that needs some visual adjustments. Native Elements do this following HTML custom attributes. Here you will find the full list of all the custom attributes you can use and which elements can accept it.
+Native Elements adds by default the outline indicator to any focusable elements when they are on `:focus` state.
 
-### ne-details-group
+Since the outline indicator is useful for the keyboard and AT navigation, you should never completely hide it. We strongly suggest to hide the outline when appropriate, for example using [`what-input`](https://github.com/ten1seven/what-input) you can do this by including it in your JavaScript file, then add this CSS snippet:
 
-Can be applied to a container to create a group of `<details>` elements with separators.
+```css
+
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}
+```
+
+By this way, thanks to what-input which will add `[data-whatintent='mouse']` to the `html` element, the outline indicator will be visible only when users will use the keyboard as input to navigate through the page.
