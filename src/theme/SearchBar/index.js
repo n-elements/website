@@ -16,7 +16,6 @@ const Search = (props) => {
   const searchBarRef = useRef(null);
   const history = useHistory();
   const { siteConfig = {} } = useDocusaurusContext();
-  const { version = {} } = siteConfig.customFields;
   const { baseUrl } = siteConfig;
   const initAlgolia = () => {
     if (!initialized.current) {
@@ -101,17 +100,6 @@ const Search = (props) => {
         onBlur={toggleSearchIconClick}
         ref={searchBarRef}
       />
-      <small style={{
-        dispaly: 'block',
-        marginLeft: 24,
-        color: '#C2C9D6',
-        display: 'inline-block',
-        verticalAlign: 'sub',
-      }}
-      >
-        v
-        {version}
-      </small>
     </div>
   );
 };
