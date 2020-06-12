@@ -28,7 +28,7 @@ function Home() {
               </Link>
               <a
                 className="button button--secondary"
-                href="https://native-elements.netlify.app/"
+                href="https://app.native-elements.dev"
                 rel="noopener noreferrer"
                 data-hide-icon
                 target="_blank"
