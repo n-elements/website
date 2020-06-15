@@ -14,20 +14,24 @@ The easiest way is to include the compiled version of the library directly in yo
 
 ```html
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core@latest/dist/native-elements.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core@1/dist/native-elements.css">
 ```
 
 You will get the whole library including the style for all the HTML elements, even if you're not using it on your page. This method is really useful to fast build prototypes and simple websites. <br />Just plug-n-customise.
+
+:::note
+The `core@1` part of the url will let you getting every `patch` and `minor` release, while you'll not get `major` and breaking changes.
+:::
 
 ## Using postcss-import-url
 
 If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url)  plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
 
 ```css
-@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@latest/dist/native-elements.min.css';
+@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/dist/native-elements.css';
 ```
 
-Using this approach you avoid the HTTP request to the CDN and you will be able to handle the final output as you want.
+By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by pasing it to your PostCSS process.
 
 ## With a package manager
 
