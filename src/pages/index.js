@@ -18,6 +18,12 @@ function Home() {
           <div>
             <h1 className={styles.DisplayTitle}>{siteConfig.title}</h1>
             <p className={styles.Tagline}>{siteConfig.tagline}</p>
+            <p className={styles.IntroText}>
+              Native Elements is a css library that helps you easily style native HTML elements
+              using CSS custom properties, classes, attributes, or whatever you want in less than
+              {' '}
+              <kbd>7 kB</kbd>
+            </p>
 
             <div className={styles.CTAs}>
               <Link

@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'HTML elements with CSS superpowers.',
   url: 'https://native-elements.dev',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'n-elements',
   projectName: 'website',
   plugins: [

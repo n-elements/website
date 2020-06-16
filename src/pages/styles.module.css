@@ -50,6 +50,10 @@
   }
 }
 
+.IntroText {
+  max-width: 480px;
+}
+
 .CTAs {
   margin-block-start: 64px;
   display: flex;
