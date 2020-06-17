@@ -22,7 +22,7 @@ function Home() {
               Native Elements is a css library that helps you easily style native HTML elements
               using CSS custom properties, classes, attributes, or whatever you want in less than
               {' '}
-              <kbd>7 kB</kbd>
+              <kbd>6 kB</kbd>
             </p>
 
             <div className={styles.CTAs}>
