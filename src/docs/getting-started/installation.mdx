@@ -14,7 +14,7 @@ The easiest way is to include the compiled version of the library directly in yo
 
 ```html
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core@1/dist/native-elements.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@native-elements/core@1/native-elements.css">
 ```
 
 You will get the whole library including the style for all the HTML elements, even if you're not using it on your page. This method is really useful to fast build prototypes and simple websites. <br />Just plug-n-customise.
@@ -28,7 +28,7 @@ The `core@1` part of the url will let you getting every `patch` and `minor` rele
 If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url)  plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
 
 ```css
-@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/dist/native-elements.css';
+@import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/native-elements.css';
 ```
 
 By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by pasing it to your PostCSS process.
@@ -62,7 +62,7 @@ You can then import the **compiled** file from within **CSS** or **JS**:
 <TabItem value="js">
 
 ```js
-/* Resolve to @native-elements/core/dist/native-elements.css */
+/* Resolve to @native-elements/core/native-elements.css */
 import '@native-elements/core';
 ```
 
@@ -82,7 +82,7 @@ If you want to go this way and unleash the full potentiality, you need configure
 ```js title="postcss.config.js"
 const path = require('path');
 const camelCase = require('camelcase');
-const variables = require('@native-elements/core/dist/props');
+const variables = require('@native-elements/core/props');
 
 /*
  * Parse variables files and prepare
@@ -117,7 +117,7 @@ module.exports = {
         'custom-media-queries': require('postcss-mixins')({
           mixinsFiles: path.join(
             process.cwd(),
-            'node_modules/@native-elements/core/dist/elements/**',
+            'node_modules/@native-elements/core/elements/**',
             '_*.pcss'
           )
         })
@@ -153,11 +153,11 @@ Add your browserslist targets via `.browserslistrc` file or inside `package.json
 Once set this, you are able to import single `.pcss` files from within your code using postcss-easy-import, and compile it with your build process.
 
 ```css title="app.css"
-@import '@native-elements/core/dist/elements/core/core';
+@import '@native-elements/core/elements/core/core';
 ```
 
 ```css title="components/my-button.css"
-@import '@native-elements/core/dist/elements/ne-button/ne-button';
+@import '@native-elements/core/elements/ne-button/ne-button';
 ```
 
 :::note
