@@ -256,3 +256,68 @@ In some cases, you may want to override some property to make something special 
 
 </TabItem>
 </Tabs>
+
+
+## Resetting
+
+Some HTML elements like `<button>` are very often reused across the project but with different styles, that's because this element should be used every time the user can perform a UI interaction.
+
+For example, if you are creating an interactive icon that will open a modal, you may want to completely exclude this element from its default style. You can do that by using the CSS `all` property and creating a global selector which removes all the Native Elements style.
+
+In this example, we're defining a global `[data-is-custom]` selector which just remove all the styles.
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+    { label: 'CSS', value: 'css', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas style="
+[data-is-custom],
+[data-is-custom]:hover,
+[data-is-custom]:active {
+  all: unset;
+}
+[data-is-custom]:hover {
+  color: blue;
+  cursor: pointer;
+}
+[data-is-custom] svg {
+  height: 44px;
+  width: 44px;
+  margin: 0;
+}
+"><button type="button" data-is-custom><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z" fill="currentColor"/><path d="M16 12l-6 4.33V7.67L16 12z" fill="currentColor"/></svg></button></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<button type="button" data-is-custom>...</button>
+```
+
+</TabItem>
+<TabItem value="css">
+
+```css
+[data-is-custom],
+[data-is-custom]:hover,
+[data-is-custom]:active {
+  all: unset;
+}
+
+[data-is-custom]:hover {
+  cursor: pointer;
+  color: blue;
+}
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+Read more about the `all` peroperty here:
+https://developer.mozilla.org/en-US/docs/Web/CSS/all
+:::
