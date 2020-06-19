@@ -1,0 +1,69 @@
+---
+id: react-vue
+title: React, Vue, Svelte...
+---
+import { Canvas } from '@site/src/components/Canvas';
+import { Spacer } from '@site/src/components/Spacer';
+
+Modern UI libraries like React, Vue, and Svelte allow developers to scope their css using [CSS Modules](https://github.com/css-modules/css-modules) or some built-in function like the one used by Vue, which assign a custom attribute to each component. Since Native Elements is just a css library, it's pretty easy to use in such environments.
+
+## Scoped style
+
+If you're using Create React App and CSS modules, you can drop NE inside your app entry point:
+
+```jsx title="app.jsx" {2}
+import React from 'react';
+import '@native-elements/core';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      ...
+    </div>
+  );
+}
+
+export default App;
+```
+
+Every HTML element handled by Native Elements will be styled, and the custom properties you will define inside the `:root` selector will be passed down even inside CSS modules. If you need to edit an element only inside a custom component, you can use their relative custom properties inside the component css:
+
+```css title="card.module.css"
+.CardButton {
+  --ne-button-y-padding: 8px;
+  --ne-button-x-padding: 16px;
+}
+```
+
+```jsx title="card.jsx"
+import React from 'react';
+import classes from './card.module.css';
+
+const Card = ({...attributes}) => (
+  <div {...attributes}>
+    <h4>Card title</h4>
+    <button type="button" className={classes.CardButton}>
+      My custom button
+    </button>
+  </div>
+)
+```
+
+The procedure is the same with [Vue Scoped CSS](https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS), import the main file in your app entry point and use the custom properties inside the scoped style:
+
+```html
+<template>
+  <div>
+    <h4>Card title</h4>
+    <button class="CardButton">My custom button</button>
+  </div>
+</template>
+
+<style scoped>
+  .CardButton {
+    --ne-button-y-padding: 8px;
+    --ne-button-x-padding: 16px;
+  }
+</style>
+```

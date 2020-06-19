@@ -9,6 +9,7 @@ module.exports = {
       'usage/customattributes',
       'usage/themes',
       'usage/outline',
+      'usage/react-vue',
     ],
   },
 };

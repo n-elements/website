@@ -93,3 +93,15 @@ a[target="_blank"]:not([data-hide-icon])::after {
 .menu__link.menu__link--active.active {
   font-weight: 400;
 }
+
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 87, 255, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 87, 255, 0.1);
+}
