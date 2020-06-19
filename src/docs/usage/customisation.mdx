@@ -144,6 +144,57 @@ button[data-type='secondary'] {
 </TabItem>
 </Tabs>
 
+Here another example of normal and striped tables.
+
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+    { label: 'CSS', value: 'css', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas height={500} style=".StripedTable {
+      --ne-table-striped-background: hsl(0, 0%, 97%);
+    }"
+  ><table><thead><tr><th><b>A</b></th><th><b>B</b></th><th><b>C</b></th></tr></thead><tbody><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr></tbody></table><br /><br /><table class="StripedTable"><thead><tr><th><b>A</b></th><th><b>B</b></th><th><b>C</b></th></tr></thead><tbody><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr><tr><td>Content 1</td><td>Content 2</td><td>Content 3</td></tr></tbody></table></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<table>
+  <thead>
+    ...
+  </thead>
+  <tbody>
+    ...
+  </tbody>
+</table>
+
+<table class="StripedTable">
+  <thead>
+    ...
+  </thead>
+  <tbody>
+    ...
+  </tbody>
+</table>
+```
+
+</TabItem>
+<TabItem value="css">
+
+```css
+.StripedTable {
+  --ne-table-striped-background: hsl(0, 0%, 97%);
+}
+```
+
+</TabItem>
+</Tabs>
+
 ## Overrides
 
 In some cases, you may want to override some property to make something special like applying masks or making special hover effects. You can just add the property or state you want to override:
