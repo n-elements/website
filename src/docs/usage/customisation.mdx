@@ -281,21 +281,21 @@ In this example, we're defining a global `[data-is-custom]` selector which just 
 [data-is-custom]:active {
   all: unset;
 }
-[data-is-custom]:hover {
+.IconButton:hover {
   color: blue;
   cursor: pointer;
 }
-[data-is-custom] svg {
+.IconButton svg {
   height: 44px;
   width: 44px;
   margin: 0;
 }
-"><button type="button" data-is-custom><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z" fill="currentColor"/><path d="M16 12l-6 4.33V7.67L16 12z" fill="currentColor"/></svg></button></Canvas>
+"><button type="button" class="IconButton" data-is-custom><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z" fill="currentColor"/><path d="M16 12l-6 4.33V7.67L16 12z" fill="currentColor"/></svg></button></Canvas>
 </TabItem>
 <TabItem value="html">
 
 ```html
-<button type="button" data-is-custom>...</button>
+<button type="button" class="IconButton" data-is-custom>...</button>
 ```
 
 </TabItem>
@@ -308,7 +308,7 @@ In this example, we're defining a global `[data-is-custom]` selector which just 
   all: unset;
 }
 
-[data-is-custom]:hover {
+.IconButton:hover {
   cursor: pointer;
   color: blue;
 }
