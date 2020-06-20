@@ -26,14 +26,8 @@ function Home() {
             </p>
 
             <div className={styles.CTAs}>
-              <Link
-                className="button button--primary"
-                to={useBaseUrl('docs/')}
-              >
-                Getting Started
-              </Link>
               <a
-                className="button button--secondary"
+                className="button button--primary"
                 href="https://app.native-elements.dev"
                 rel="noopener noreferrer"
                 data-hide-icon
@@ -41,6 +35,12 @@ function Home() {
               >
                 Build your theme
               </a>
+              <Link
+                className="button button--secondary"
+                to={useBaseUrl('docs/')}
+              >
+                Documentation
+              </Link>
             </div>
           </div>
           <div className={styles.AnimationContainer}>
