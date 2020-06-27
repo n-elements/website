@@ -3,6 +3,7 @@ module.exports = {
     'Getting Started': [
       'getting-started/introduction',
       'getting-started/installation',
+      'getting-started/browser-support',
     ],
     Usage: [
       'usage/customization',
