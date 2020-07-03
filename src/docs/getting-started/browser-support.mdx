@@ -12,9 +12,9 @@ Following are the most modern CSS features used by Native Elements along with th
 - Custom Properties — [https://caniuse.com/#feat=css-variables](https://caniuse.com/#feat=css-variables)
 - Logical Properties — [https://caniuse.com/#feat=css-logical-props](https://caniuse.com/#feat=css-logical-props)
 
-## Prefixes
+## Browsers target
 
-The distributed version of the compiled Native Elements (native-elements.css) comes with vendor prefixes included. Vendor prefixes are added/removed by a default <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a> configuration:
+The distributed version of the compiled Native Elements (native-elements.css) comes with vendor prefixes included and specific optimisations based on the targetted browsers. Such target-specific manipulation are made based on the Native Elements default <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a> configuration:
 
 ```json
 "browserslist": [
@@ -25,4 +25,4 @@ The distributed version of the compiled Native Elements (native-elements.css) co
 ]
 ```
 
-If you wish to control which prefixes are applied, you can import the source files and run them through your own PostCSS setup.
+If you wish to control which prefixes are applied, you can [import the source files and run them through your own PostCSS setup.](/docs/getting-started/installation#compiling-source)
