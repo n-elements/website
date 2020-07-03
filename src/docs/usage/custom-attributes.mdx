@@ -8,6 +8,31 @@ import TabItem from '@theme/TabItem';
 
 Some elements can be composed to build a group that needs some visual adjustments. Native Elements do this following HTML custom attributes. Here you will find the full list of all the custom attributes you can use and which elements can accept it.
 
+### ne-button
+
+Applied to an `a` element it becomes a button instead of a text link.
+
+<Tabs
+  defaultValue="result"
+  values={[
+    { label: 'Result', value: 'result', },
+    { label: 'HTML', value: 'html', },
+  ]
+}>
+<TabItem value="result">
+  <Canvas style="button, a {margin: 0 8px;}" height={110}><button>This is a button</button><a href="#" ne-button="true" onClick={(event) => event.preventDefault() }>This is a link button</a></Canvas>
+</TabItem>
+<TabItem value="html">
+
+```html
+<button>This is a button</button>
+<a href="#" ne-button>This is a link button</a>
+```
+
+</TabItem>
+</Tabs>
+
+
 ### ne-details-group
 
 Can be applied to a container to create a group of `<details>` elements with separators.
