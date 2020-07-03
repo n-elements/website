@@ -54,7 +54,7 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      copyright: `<a href="https://a.paddle.com/v2/click/16413/37697?link=1227" target="_blank" aria-label="Vscode Power User" data-hide-icon><img alt="Vscode Power User" src="https://img.shields.io/badge/VSCode%20Power%20User-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a> <a href="https://a.paddle.com/v2/click/16413/37697?link=2345" target="_blank" data-hide-icon aria-label="NodeCLI.com"><img alt="NodeCLI.com" src="https://img.shields.io/badge/Node%20Cli.com%20-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/></a><br /><small>&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a> and <a href="https://twitter.com/iamoctod" target="_blank" rel="noopener noreferrer" data-hide-icon>@iamoctod</a></small>`,
+      copyright: `<a data-hide-icon href="https://opencollective.com/native-elements/donate" target="_blank" rel="noopener"><img src="https://opencollective.com/native-elements/donate/button@2x.png?color=blue" width="250" /></a><br /><small>&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a> and <a href="https://twitter.com/iamoctod" target="_blank" rel="noopener noreferrer" data-hide-icon>@iamoctod</a></small>`,
     },
   },
   presets: [
