@@ -11,6 +11,7 @@ module.exports = {
       'usage/themes',
       'usage/outline',
       'usage/react-vue',
+      'usage/examples',
     ],
   },
 };
