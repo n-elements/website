@@ -1,2 +1,2 @@
-* [Home](/pages/README.md)
-* [Guide](docs/getting-started/introduction.md)
+* [Getting started](#)
+  * [Installation](/docs/getting-started/installation.md)
