@@ -59,7 +59,8 @@ import '@native-elements/core';
 
 If you want to go this way and unleash the full potentiality, you need configure PostCSS to use the plugins required by Native Elements (required plugins are installed with the main package), here the full configuration file with the settings:
 
-**postcss.config.js**
+<details>
+  <summary><b>postcss.config.js</b></summary>
 
 ```js
 const path = require('path');
@@ -120,8 +121,9 @@ module.exports = {
   }
 };
 ```
+</details>
 
-Add your browserslist targets via `.browserslistrc` file or inside `package.json`:
+Add your browserslist targets inside `package.json`:
 
 ```js
 "browserslist": [

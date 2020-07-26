@@ -1,0 +1,54 @@
+:root {
+  /* Color
+  ------------------------------------------------------------------------- */
+  --base-font-size  : 14px;
+  --theme-hue       : 220;
+  --mono-hue        : 220;
+  --mono-saturation : 30%;
+  --theme-saturation: 100%;
+  --theme-lightness : 50%;
+
+
+  /* Base
+  ============================================================================= */
+  --base-font-size  : 1.125rem;
+  --strong-font-weight : 700;
+  --selection-color : #000;
+
+  /* Content
+  ============================================================================= */
+  --content-max-width : 70ch;
+  --heading-h1-font-weight: 700;
+  --heading-h2-font-weight: 700;
+  --heading-h3-font-weight: 700;
+  --heading-h4-font-weight: 700;
+  --link-color: var(--theme-color);
+
+  /* Typography
+  ============================================================================= */
+
+  /* Modular Scale */
+  --modular-scale   : 1.45;
+
+  --border-radius-s : 4px;
+  --border-radius-m : 8px;
+  --border-radius-l : 16px;
+
+  /* Sidebar
+  ============================================================================= */
+  --sidebar-toggle-background: var(--theme-color);
+  --sidebar-toggle-icon-color: #fff;
+  --sidebar-toggle-icon-stroke-width: 2px
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-background-color: var(--mono-shade3);
+  }
+
+  pre[data-lang][class*="language-"] {
+    background: var(--mono-shade1);
+  }
+
+}
