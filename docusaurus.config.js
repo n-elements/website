@@ -54,7 +54,7 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      copyright: `<a data-hide-icon href="https://opencollective.com/native-elements/donate" target="_blank" rel="noopener"><img src="https://opencollective.com/native-elements/donate/button@2x.png?color=blue" width="250" /></a><br /><small>&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a> and <a href="https://twitter.com/iamoctod" target="_blank" rel="noopener noreferrer" data-hide-icon>@iamoctod</a></small>`,
+      copyright: `<a data-hide-icon href="https://opencollective.com/native-elements/donate" target="_blank" rel="noopener"><img src="https://opencollective.com/native-elements/donate/button@2x.png?color=blue" width="250" /></a><br /><small>&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a></small>`,
     },
   },
   presets: [
