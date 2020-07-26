@@ -17,13 +17,13 @@ You will get the whole library including the style for all the HTML elements, ev
 
 ## Using postcss-import-url
 
-If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url)  plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
+If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url) plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
 
 ```css
 @import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/native-elements.css';
 ```
 
-By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by pasing it to your PostCSS process.
+By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it to your PostCSS plugins.
 
 ## With a package manager
 
