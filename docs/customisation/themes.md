@@ -11,7 +11,7 @@ Thanks to the <a href="https://app.native-elements.dev/" rel="noopener" target="
 <a href="https://app.native-elements.dev/" data-hide-icon rel="noopener" target="_blank">
 <picture>
   <source srcset="/images/tb-dark.png" media="(prefers-color-scheme: dark)">
-  <img src="/images/tb-light.png" />
+  <img src="/images/tb-light.png" alt="" />
 </picture>
 </a>
 
