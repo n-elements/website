@@ -12,17 +12,16 @@
   /* Base
   ============================================================================= */
   --base-font-size  : 1.125rem;
-  --strong-font-weight : 700;
-  --selection-color : #000;
 
   /* Content
   ============================================================================= */
-  --content-max-width : 70ch;
+  --content-max-width : 80ch;
   --heading-h1-font-weight: 700;
   --heading-h2-font-weight: 700;
   --heading-h3-font-weight: 700;
   --heading-h4-font-weight: 700;
   --link-color: var(--theme-color);
+  --kbd-padding: 0.4em 0.5em;
 
   /* Typography
   ============================================================================= */
@@ -38,7 +37,8 @@
   ============================================================================= */
   --sidebar-toggle-background: var(--theme-color);
   --sidebar-toggle-icon-color: #fff;
-  --sidebar-toggle-icon-stroke-width: 2px
+  --sidebar-toggle-icon-stroke-width: 2px;
+  --sidebar-nav-link-before-content-l3: '';
 }
 
 
@@ -51,4 +51,7 @@
     background: var(--mono-shade1);
   }
 
+  .app-name-link > img {
+    filter: brightness(0) invert();
+  }
 }

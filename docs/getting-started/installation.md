@@ -2,7 +2,7 @@
 
 You can use Native Elements in different ways, depend on which level of customization and optimization you want.
 
-## Using CDN
+## CDN
 
 The easiest way is to include the compiled version of the library directly in your page, using a CDN service like <a href="https://www.jsdelivr.com/" taarget="_blank" rel="noopner noreferrer">JsDelivr</a>:
 
@@ -15,9 +15,9 @@ You will get the whole library including the style for all the HTML elements, ev
 
 ?> Using the `core@1` alias as version will let you getting every `patch` and `minor` releases, while you'll not get `major` updates.
 
-## Using postcss-import-url
+## Bundling
 
-If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>  , you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url) plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
+If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>, you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url) plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
 
 ```css
 @import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/native-elements.css';
@@ -25,7 +25,7 @@ If you're already using <a href="https://postcss.org/" target="_blank" rel="noop
 
 By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it to your PostCSS plugins.
 
-## With a package manager
+## Package manager
 
 First you need a package manager like <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a>, <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">yarn</a>, or <a href="https://pnpm.js.org/" target="_blank" rel="noopener noreferrer">pnpm</a>, then install the package locally inside your project:
 
@@ -57,7 +57,14 @@ import '@native-elements/core';
 
 !> We don't encourage using this method if you don't know very well what you are doing.
 
-If you want to go this way and unleash the full potentiality, you need configure PostCSS to use the plugins required by Native Elements (required plugins are installed with the main package), here the full configuration file with the settings:
+If you want to go this way and unleash the full potentiality, you need configure PostCSS to use the plugins required by Native Elements:
+
+- [postcss-easy-import](https://github.com/TrySound/postcss-easy-import ':target=_blank')
+- [postcss-preset-env](https://preset-env.cssdb.org ':target=_blank')
+- [postcss-mixins](https://github.com/postcss/postcss-mixins ':target=_blank')
+- [cssnano](https://github.com/cssnano/cssnano ':target=_blank')
+
+Here the full PostCSS configuration file:
 
 <details>
   <summary><b>postcss.config.js</b></summary>
@@ -83,9 +90,12 @@ const envVariables = {
 
 module.exports = {
   plugins: {
+    // More info: https://github.com/TrySound/postcss-easy-import
     'postcss-easy-import': {
       extensions: '.pcss'
     },
+
+    // More info: https://preset-env.cssdb.org
     'postcss-preset-env': {
       stage: 0,
       features: {
@@ -97,6 +107,7 @@ module.exports = {
         envVariables,
       ],
       insertAfter: {
+        // More info: https://github.com/postcss/postcss-mixins
         'custom-media-queries': require('postcss-mixins')({
           mixinsFiles: path.join(
             process.cwd(),
@@ -106,6 +117,8 @@ module.exports = {
         })
       }
     },
+
+    // More info: https://github.com/cssnano/cssnano
     cssnano: {
       preset: [
         'advanced',

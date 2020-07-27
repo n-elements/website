@@ -7,7 +7,7 @@ Following are the most modern CSS features used by Native Elements along with th
 - [Custom Properties](https://caniuse.com/#feat=css-variables)
 - [Logical Properties](https://caniuse.com/#feat=css-logical-props)
 
-## Browsers target
+## Browsers target {docsify-ignore}
 
 The distributed version of the compiled Native Elements (native-elements.css) comes with vendor prefixes included and specific optimisations based on the targetted browsers. Such target-specific manipulation are made based on the Native Elements default <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a> configuration:
 
