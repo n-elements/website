@@ -15,7 +15,7 @@ You will get the whole library including the style for all the HTML elements, ev
 
 ?> Using the `core@1` alias as version will let you getting every `patch` and `minor` releases, while you'll not get `major` updates.
 
-## Bundling
+## PostCSS
 
 If you're already using <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a>, you can add [postcss-import-url](https://www.npmjs.com/package/postcss-import-url) plugin to import and inline the compiled file in your final build (build-time), avoiding the HTTP request.
 
