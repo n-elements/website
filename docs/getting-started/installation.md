@@ -151,12 +151,12 @@ Once set this, you are able to import single `.pcss` files from within your code
 
 **app.css**
 ```css
-@import '@native-elements/core/elements/core/core';
+@import '@native-elements/core/elements/core/core.pcss';
 ```
 
 **components/my-button.css**
 ```css
-@import '@native-elements/core/elements/ne-button/ne-button';
+@import '@native-elements/core/elements/ne-button/ne-button.pcss';
 ```
 
 ?> You need to import `core` to get the style applied to the document, like selection color, base font-size, etc...
