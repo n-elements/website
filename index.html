@@ -25,16 +25,31 @@
       maxLevel: 1,
       subMaxLevel: 2,
       topMargin: 80,
+      executeScript: true,
       logo: '/images/logo.svg',
       loadSidebar: '_sidebar.md',
       homepage: 'docs/getting-started/introduction.md',
       coverpage: 'coverpage.html',
+      auto2top: true,
       ga: 'UA-167955942-2',
       pagination: {
         previousText: 'Previous',
         nextText: 'Next',
         crossChapter: true,
       },
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<footer>',
+            `<a data-hide-icon href="https://opencollective.com/native-elements/contribute/free-donation-18192/checkout" target="_blank" rel="noopener"><img src="https://opencollective.com/native-elements/donate/button@2x.png?color=blue" width="250" /></a><br /><small>&copy; ${new Date().getFullYear()} Native Elements is made by <a href="https://twitter.com/equinusocio" target="_blank" rel="noopener noreferrer" data-hide-icon>@equinusocio</a></small>`,
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>

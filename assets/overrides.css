@@ -18,3 +18,14 @@ a[target=_blank]:not([data-hide-icon]):not(.github-corner):after {
   -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.167.917a.75.75 0 01.75-.75h4.166a.747.747 0 01.75.75v4.166a.75.75 0 01-1.5 0V2.727l-3.72 3.72a.75.75 0 01-1.06-1.06l3.72-3.72H6.917a.75.75 0 01-.75-.75zm-1.75 2.666h-1.5v5.5h5.5v-1.5a1 1 0 112 0V9.25a1.833 1.833 0 01-1.834 1.833H2.75A1.833 1.833 0 01.917 9.25V3.417A1.833 1.833 0 012.75 1.583h1.667a1 1 0 110 2z' fill='%23000'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.167.917a.75.75 0 01.75-.75h4.166a.747.747 0 01.75.75v4.166a.75.75 0 01-1.5 0V2.727l-3.72 3.72a.75.75 0 01-1.06-1.06l3.72-3.72H6.917a.75.75 0 01-.75-.75zm-1.75 2.666h-1.5v5.5h5.5v-1.5a1 1 0 112 0V9.25a1.833 1.833 0 01-1.834 1.833H2.75A1.833 1.833 0 01.917 9.25V3.417A1.833 1.833 0 012.75 1.583h1.667a1 1 0 110 2z' fill='%23000'/%3E%3C/svg%3E");
 }
+
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+.app-name-link img {
+  transform: scale(1.7);
+}

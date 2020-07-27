@@ -1,8 +1,8 @@
-* **Getting started**
+* **🚀 Getting started**
   * [Installation](/docs/getting-started/installation.md)
   * [Browser support](/docs/getting-started/browser-support.md)
 
-* **Customisation**
+* **🎨 Customisation**
   * [Usage](/docs/customisation/usage.md)
   * [Custom attributes](/docs/customisation/custom-attributes.md)
   * [Themes](/docs/customisation/themes.md)

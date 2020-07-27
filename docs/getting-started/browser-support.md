@@ -1,5 +1,7 @@
 # Browser support
 
+<img width="32px" alt="Google Chrome" src="https://bit.ly/2EqrUDl"/> <img width="32px" alt="Firefox" src="https://bit.ly/35SKj4D"/> <img width="32px" alt="Safari" src="https://bit.ly/3jJNLps"/> <img width="32px" alt="Edge" src="https://bit.ly/2MnqnyS"/>
+
 Native Elements core is built using many modern CSS features. Most notable of these features include CSS variables, also known as CSS custom properties and logical properties. Support for these features is exceptional among modern evergreen browsers, however older, non evergreen browsers lack support for many of these same features. We therefore recommend that if support of older browsers like IE 10 and 11 are a concern then Native Elements will not be the correct fit for your project.
 
 Following are the most modern CSS features used by Native Elements along with their corresponding entry in the excellent Can I Use database.

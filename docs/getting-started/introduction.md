@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 Native Elements (NE) is not a CSS framework, no bundlers required or tons of configurations to set. You can consider it as a customizable plug-n-play library for your site which helps you easily style all the available HTML elements using CSS custom properties, classes, attributes, or whatever you want in less than <kbd>6 kB</kbd>. You can also build your class-based CSS framework on top of it.
 
@@ -7,14 +7,19 @@ Native Elements (NE) is not a CSS framework, no bundlers required or tons of con
 This library is built using modern CSS feature and best practices, the compiled version supports only the latest two Chrome, Safari, Firefox, and Edge versions and this is possible thanks to <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a>
 
 
-
 ### Modern <img src="/images/icons/modern.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a> takes advantage of exciting new CSS features, like custom and logical properties. If you use it from source, you can define custom selectors and mixins to make styling even easier.
 
+<br >
+<br >
+
 ### Modular <img src="/images/icons/modular.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 <p>In the age of Flexbox, CSS grid, and other exciting layout features, there is less and less need for a bloated CSS framework. What you do need is a simple foundation on top of which to build your styles.</p>
+
+<br >
+<br >
 
 ### Framework agnostic <img src="/images/icons/framework.svg" style="margin-right: 16px;" width="48px" align="left" />
 
@@ -28,6 +33,9 @@ Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener nor
         target="_blank">Angular</a> and <a href="https://svelte.dev/"
         rel="noopener noreferrer"
         target="_blank">Svelte.</a></p>
+
+<br >
+<br >
 
 ### Easy theming <img src="/images/icons/theming.svg" style="margin-right: 16px;" width="48px" align="left" />
 
