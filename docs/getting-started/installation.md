@@ -4,7 +4,7 @@ You can use Native Elements in different ways, depend on which level of customiz
 
 ## CDN
 
-The easiest way is to include the compiled version of the library directly in your page, using a CDN service like <a href="https://www.jsdelivr.com/" taarget="_blank" rel="noopner noreferrer">JsDelivr</a>:
+The easiest way is to include the compiled version of the library directly in your page, using a CDN service like <a href="https://www.jsdelivr.com/" target="_blank" rel="noopner noreferrer">JsDelivr</a>:
 
 ```html
 <link rel="preconnect" href="https://cdn.jsdelivr.net">

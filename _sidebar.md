@@ -7,6 +7,7 @@
   * [Custom attributes](/docs/customisation/custom-attributes.md)
   * [Themes](/docs/customisation/themes.md)
   * [Outline](/docs/customisation/outline.md)
+  * [React, Vue, Svelte...](/docs/customisation/react-vue.md)
 
 [**Theme Builder**](https://app.native-elements.dev ':target=_blank')
 [**Github**](https://github.com/n-elements/core ':target=_blank')
