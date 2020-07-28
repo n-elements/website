@@ -16,12 +16,12 @@ The above commands will use the default configuration and they generate the full
 
 ## CLI parameters
 
-<details>
+<details open>
   <summary><b><output>--out</output></b> | <em>string</em> | <span class="Badge" data-type="important">required</span></summary>
 This set where to generate the output css
 </details>
 <hr />
-<details>
+<details open>
   <summary><b><output>--minify</output></b> | <em>boolean</em> | true</summary>
 If present, minify the output
 </details>

@@ -140,12 +140,24 @@ By this way the CLI will merge the default configurations with ones provided by 
 
 Here the full list of options.
 
-<details>
+<details open>
   <summary><b><output>minify</output></b> | <em>boolean</em> | true</summary>
   Minify the output
 </details>
 <hr />
-<details>
+<details open>
   <summary><b><output>outputPath</output></b> | <em>string</em> | <span class="Badge" data-type="important">required</span></summary>
 This set where to generate the output css. If you're not passing the <code>--out</code> flag to the cli, this option is required.
+</details>
+<hr />
+<details open>
+  <summary><b><output>utilities</output></b> | <em>object</em></summary>
+
+```js
+'name': {
+  type: 'standard' | 'responsive',
+  states: string[], // Any CSS pseudo-class: hover, focus, etc...
+  property: string  // Any CSS property name
+}
+```
 </details>
