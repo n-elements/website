@@ -1,3 +1,24 @@
+<css-doodle>
+  :doodle {
+    @grid: 20 / 100vw;
+    grid-gap: 40px;
+    @min-size: 40em;
+  }
+
+  transform: scale(@rand(.2, 1.2));
+  transition: @rand(500ms) ease;
+  pointer-events: none;
+
+  background: @pick(
+    var(--doodle-bg1), var(--doodle-bg2)
+  );
+
+  border-radius: @pick(
+    4px,
+    8px,
+    100%,
+  );
+</css-doodle>
 <h1>Native Elements</h1>
 <h3>HTML elements with CSS superpowers.</h3>
 <br><br>
@@ -5,3 +26,4 @@
   <a href="https://app.native-elements.dev" target="_blank" rel="noopener noreferrer" data-hide-icon><b>BUILD YOUR THEME</b></a>
   <a href="#/?id=introduction"><b>DOCUMENTATION</b></a>
 </p>
+

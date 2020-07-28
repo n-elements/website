@@ -7,10 +7,13 @@
   --mono-saturation : 30%;
   --theme-saturation: 100%;
   --theme-lightness : 50%;
+  --doodle-bg1: #EEF1F6;
+  --doodle-bg2: #E0E4EB;
 
   /* App
   ============================================================================= */
   --spinner-track-color: #E0E4EB;
+  --sidebar-width: 19rem;
 
   /* Base
   ============================================================================= */
@@ -50,7 +53,6 @@
   --cover-heading-font-weight: 800;
   --cover-heading-color: #000;
   --cover-background-color: #E0E4EB;
-  --cover-background-image: radial-gradient(ellipse at center bottom, #fff, transparent);
   --cover-button-background: #E0E4EB;
   --cover-button-border: #E0E4EB;
   --cover-button-padding: 1rem 1.5rem;
@@ -61,26 +63,20 @@
   --search-input-margin: 0;
   --search-input-border-width: 2px;
   --search-input-border-radius: 100px;
+  --search-input-background-color--focus: none;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
     --theme-color: #3378FF;
+    --doodle-bg1: #121721;
+    --doodle-bg2: #121721;
     --base-background-color: var(--mono-shade3);
     --spinner-track-color: #000;
     --cover-heading-color: #fff;
     --cover-background-color: #000;
-    --cover-background-image: radial-gradient(ellipse at center bottom, #121721, transparent);
     --cover-button-background: #242E42;
     --cover-button-border: #242E42;
-  }
-
-  pre[data-lang][class*="language-"] {
-    background: var(--mono-shade1);
-  }
-
-  .app-name-link > img {
-    filter: brightness(0) invert();
   }
 }
