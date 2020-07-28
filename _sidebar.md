@@ -9,8 +9,8 @@
   * [Outline](/docs/customisation/outline.md)
   * [React, Vue, Svelte...](/docs/customisation/react-vue.md)
 
-* **🛠 Utility-first CSS** <span class="Badge">NEW</span>
-  * [Funky](/docs/utilities/funky.md)
+* **🛠 Funky CSS** <span class="Badge">NEW</span>
+  * [Introduction](/docs/utilities/introduction.md)
   * [Usage](/docs/utilities/usage.md)
   * [Configuration](/docs/utilities/configuration.md)
 
