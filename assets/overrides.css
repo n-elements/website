@@ -3,6 +3,10 @@
   border-radius: 0;
 }
 
+.CoverLogo {
+  max-width: 100%;
+  height: auto;
+}
 
 iframe {
   border-radius: var(--border-radius-m);
