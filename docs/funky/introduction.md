@@ -1,4 +1,4 @@
-# Funky [![](https://img.shields.io/npm/v/@native-elements/funky.svg?label=&style=minimal&colorA=000000&colorB=1B84FF)](https://www.npmjs.org/package/@native-elements/funky)
+# Funky
 
 [Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is the definitive CLI tool to create your own class-less based utility-first style. Instead of generating classes, it will generate custom properties to which you can pass any valid `CSS` value.
 
@@ -11,7 +11,7 @@ Instead of this...
 you will write this...
 
 ```html
-<p style="bg-hover:var(--primary); margin-t:var(--space-1); flex-s-lg:0; martin-t:0;">
+<p style="bg-hover:var(--primary); margin-t:var(--space-1); flex-s-lg:0; margin-t:0;">
 ```
 
 You are free to pass any valid value to each property without generating multiple variants of it, and you can also perform calculations inside any property, based on the situation. You may notice that this approach is similar to writing inline style, but here some difference:

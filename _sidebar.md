@@ -10,9 +10,9 @@
   * [React, Vue, Svelte...](/docs/customisation/react-vue.md)
 
 * **🛠 Funky CSS** <span class="Badge">NEW</span>
-  * [Introduction](/docs/utilities/introduction.md)
-  * [Usage](/docs/utilities/usage.md)
-  * [Configuration](/docs/utilities/configuration.md)
+  * [Introduction](/docs/funky/introduction.md)
+  * [Usage](/docs/funky/usage.md)
+  * [Configuration](/docs/funky/configuration.md)
 
 ---
 
