@@ -9,7 +9,7 @@
   * [Outline](/docs/customisation/outline.md)
   * [React, Vue, Svelte...](/docs/customisation/react-vue.md)
 
-* **🛠 Funky CSS** <span class="Badge">NEW</span>
+* **🛠 Funky CLI** <span class="Badge">NEW</span>
   * [Introduction](/docs/funky/introduction.md)
   * [Usage](/docs/funky/usage.md)
   * [Configuration](/docs/funky/configuration.md)
@@ -18,3 +18,4 @@
 
 [**Theme Builder**](https://app.native-elements.dev ':target=_blank')
 [**Github**](https://github.com/n-elements/core ':target=_blank')
+[**Support us**](https://opencollective.com/native-elements/contribute/free-donation-18192/checkout ':target=_blank')
