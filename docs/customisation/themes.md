@@ -6,7 +6,7 @@ The default style of Native Elements is built in as custom properties fallback. 
 
 ## Making a theme
 
-Thanks to the <a href="https://app.native-elements.dev/" rel="noopener" target="_blank">Theme Builder</a> app you can create your color palette, visually change and preview all the available custom properties, and download a ready-to-use theme that you can include in your project.
+Thanks to the <a href="https://app.native-elements.dev/" rel="noopener" target="_blank">Theme Builder</a> app you can create your color palette and customise all the elements by visually change and preview all the available custom properties. Then you can download a ready-to-use theme that you can include in your project.
 
 <a href="https://app.native-elements.dev/" data-hide-icon rel="noopener" target="_blank">
 <picture>

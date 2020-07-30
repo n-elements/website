@@ -167,13 +167,15 @@ This set where to generate the output css. If you're not passing the <code>--out
   Set the list of the properties you want to generate
 
 ```js
-'varName': {
-  // Set if it should have responsive variants
-  type: 'standard' | 'responsive',
-  // Any CSS property name
-  property: string,
-  // Any CSS pseudo-class: hover, focus, etc...
-  states?: string[]
+utilities: {
+  'varName': {
+    // Set if it should have responsive variants
+    type: 'standard' | 'responsive',
+    // Any CSS property name
+    property: string,
+    // Any CSS pseudo-class: hover, focus, etc...
+    states?: string[]
+  }
 }
 ```
 </details>
