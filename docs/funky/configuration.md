@@ -12,8 +12,8 @@ module.exports = {
   utilities: {
     'bg': {
       type: 'standard',
-      states: ['hover'],
-      property: 'background-color'
+      property: 'background-color',
+      states: ['hover']
     }
   }
 };
@@ -170,10 +170,10 @@ This set where to generate the output css. If you're not passing the <code>--out
 'varName': {
   // Set if it should have responsive variants
   type: 'standard' | 'responsive',
-  // Any CSS pseudo-class: hover, focus, etc...
-  states?: string[],
   // Any CSS property name
-  property: string
+  property: string,
+  // Any CSS pseudo-class: hover, focus, etc...
+  states?: string[]
 }
 ```
 </details>
