@@ -1,6 +1,6 @@
 # Funky
 
-[Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is the definitive CLI tool to create your own class-less based utility-first style. Instead of generating classes, it will generate custom properties to which you can pass any valid `CSS` value. It's the best [Native Elements](/) companion tool to build simple website and to do fast prototypes.
+[Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is the definitive CLI tool to create your own class-less based utility-first style. Instead of generating classes, it will generate custom properties to which you can pass any valid `CSS` value. It's the best [Native Elements](/) companion tool to build simple website and fast prototypes.
 
 Instead of this...
 
@@ -27,7 +27,9 @@ More advantages compared to other utility frameworks:
 - No restriction to a set number of property/value combinations defined by the framework.
 - Fully customisable
 
-**For repeated elements, we would always recommend to create your own repeatable, modular CSS.**
+**Combining the Native Elements and Funky small sizes, you will have a complete `CSS` tool in less than <kbd>10kB</kbd>**
+
+?> For repeated elements, we would always recommend to create your own repeatable, modular CSS.
 
 ## Instalation {docsify-ignore}
 

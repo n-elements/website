@@ -23,6 +23,13 @@ If you're already using <a href="https://postcss.org/" target="_blank" rel="noop
 @import 'https://cdn.jsdelivr.net/npm/@native-elements/core@1/native-elements.css';
 ```
 
+Alternatively you can use any other plugin to import the core file from node modules:
+
+```css
+/* You need "postcss-easy-import" or similar to import from modules */
+@import '@native-elements/core';
+```
+
 By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it to your PostCSS plugins.
 
 ## Package manager
