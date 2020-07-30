@@ -12,7 +12,7 @@ You can also use `npx` to run the CLI as-a-service:
 npx @native-elements/funky --out path/to/output.css
 ```
 
-The above commands will use the default configuration and they generate the full CSS.
+The above command will use the default configuration and generate the full CSS if you don't provide your own configuration file. [To access the full configuration check how to customise it.](docs/funky/configuration)
 
 ## CLI parameters
 

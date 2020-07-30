@@ -73,7 +73,7 @@ module.exports = {
 
 The CLI will use a [default configuration](https://github.com/n-elements/funky/blob/master/config.js ':target=_blank') when you don't provide yours but you can fully customize Funky by creating a file at the root of your project called `funky.config.js`.
 
-**Note that the default configuration is full logical properties oriented. So if you have to support obsolete software, you have to provide your own configuration**.
+**Note that the default configuration is full logical properties oriented. So if you have to support obsolete software, you have to provide your own utilities**.
 
 ### New configuration
 
@@ -151,13 +151,29 @@ This set where to generate the output css. If you're not passing the <code>--out
 </details>
 <hr />
 <details open>
-  <summary><b><output>utilities</output></b> | <em>object</em></summary>
+  <summary><b><output>breakpoints</output></b> | <em>object</em></summary>
 
 ```js
-'name': {
+{
+  // the `min-width` breakpoint name and value
+  name: string,
+}
+```
+</details>
+<hr />
+<details open>
+  <summary><b><output>utilities</output></b> | <em>object</em></summary>
+
+  Set the list of the properties you want to generate
+
+```js
+'varName': {
+  // Set if it should have responsive variants
   type: 'standard' | 'responsive',
-  states: string[], // Any CSS pseudo-class: hover, focus, etc...
-  property: string  // Any CSS property name
+  // Any CSS pseudo-class: hover, focus, etc...
+  states?: string[],
+  // Any CSS property name
+  property: string
 }
 ```
 </details>

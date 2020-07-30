@@ -31,7 +31,7 @@ More advantages compared to other utility frameworks:
 
 ## Instalation {docsify-ignore}
 
-[Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is a CLI tool, you can install it locally, globally or you can run it when you need it [by using `npx`](docs/utilities/usage).
+[Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is a CLI tool, you can install it locally, globally or you can run it when you need it [by using `npx`](docs/funky/usage).
 
 ```bash
 # Local installation
