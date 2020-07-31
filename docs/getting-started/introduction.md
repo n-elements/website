@@ -7,21 +7,21 @@ Native Elements (NE) is not a CSS framework, no bundlers required or tons of con
 This library is built using modern CSS feature and best practices, the compiled version supports only the latest two Chrome, Safari, Firefox, and Edge versions and this is possible thanks to <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener noreferrer">Browserslist</a>
 
 
-### Modern <img src="/images/icons/modern.svg" style="margin-right: 16px;" width="48px" align="left" />
+### Modern <img alt="" src="/images/icons/modern.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener noreferrer">PostCSS</a> takes advantage of exciting new CSS features, like custom and logical properties. If you use it from source, you can define custom selectors and mixins to make styling even easier.
 
 <br >
 <br >
 
-### Modular <img src="/images/icons/modular.svg" style="margin-right: 16px;" width="48px" align="left" />
+### Modular <img alt="" src="/images/icons/modular.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 <p>In the age of Flexbox, CSS grid, and other exciting layout features, there is less and less need for a bloated CSS framework. What you do need is a simple foundation on top of which to build your styles.</p>
 
 <br >
 <br >
 
-### Framework agnostic <img src="/images/icons/framework.svg" style="margin-right: 16px;" width="48px" align="left" />
+### Framework agnostic <img alt="" src="/images/icons/framework.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 <p>
     If you're using the compiled version, just drop it inside your application main style. It's just CSS, so it works with <a href="https://reactjs.org"
@@ -37,7 +37,7 @@ Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener nor
 <br >
 <br >
 
-### Easy theming <img src="/images/icons/theming.svg" style="margin-right: 16px;" width="48px" align="left" />
+### Easy theming <img alt="" src="/images/icons/theming.svg" style="margin-right: 16px;" width="48px" align="left" />
 
 
 <p>With our <a href="https://app.native-elements.dev" rel="noopener" target="_blank">theme builder</a> tool you can create, tweak, and export your theme easily. In the future, we'll share new premade themes.</p>
