@@ -30,7 +30,7 @@ Alternatively you can use any other plugin to import the core file from node mod
 @import '@native-elements/core';
 ```
 
-By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it to your PostCSS plugins.
+By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it with your PostCSS plugins.
 
 ## Package manager
 
