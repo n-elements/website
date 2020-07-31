@@ -26,7 +26,7 @@ That function will set `1rem` as a minimum size and `3rem` as a maximum size, wh
 }
 ```
 
-?> Please note that any elements that is inheriting the font-size from the `body` — like buttons —  will use the same rule. Since you may dont' want this, we suggest to make sure to declare a font-size on such elements.
+?> Please note that any elements that is inheriting the font-size from the `body` — like buttons —  will use the same rule. Since you may don't want this, we suggest to make sure to declare a font-size on such elements.
 
 ## Responsive typography
 
