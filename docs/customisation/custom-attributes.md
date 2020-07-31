@@ -4,7 +4,7 @@ Some elements can be composed to build a group that needs some visual adjustment
 
 ## ne-button
 
-Applied to an `a` element it becomes a button instead of a text link.
+Applied to an `a` element it visually becomes a button instead of a text link.
 
 <iframe src="https://ne-doc-custom-attr.glitch.me" width="100%" frameborder="0" loading="lazy" ></iframe>
 
