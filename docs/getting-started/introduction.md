@@ -64,5 +64,5 @@ Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener nor
 - <a href="https://wi-freecom.it/" rel="noopener" target="_blank">wi-freecom.it</a>
 - <a href="https://blog.freecomsrl.com/" rel="noopener" target="_blank">blog.freecomsrl.com</a>
 - <a href="https://pierresaid.github.io/random-cat-facts/" rel="noopener" target="_blank">pierresaid.github.io/random-cat-facts</a>
-- <b>If you want to add your site here, edit <a href="https://github.com/n-elements/website/blob/master/src/docs/getting-started/Introduction.mdx" target="_blank" rel="noopener" >this file</a> and submit a PR!</b>
+- <b>If you want to add your site here, edit <a href="https://github.com/n-elements/website/blob/master/docs/getting-started/introduction.md" target="_blank" rel="noopener" >this file</a> and submit a PR!</b>
 
