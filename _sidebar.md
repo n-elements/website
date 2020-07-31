@@ -10,8 +10,8 @@
   * [React, Vue, Svelte...](/docs/customisation/react-vue.md)
 
 * **🧑‍🔬 Recipes**
-  * <p style="opacity: 0.5">Responsive typography <small> — soon</small></p>
-  * <p style="opacity: 0.5">Switch theme <small> — soon</small></p>
+  * [Handling typography](/docs/recipes/handling-typography.md)
+  * <p style="opacity: 0.5">› Switch theme <small> — soon</small></p>
 
 * **🛠 Funky CLI** <span class="Badge">NEW</span>
   * [Introduction](/docs/funky/introduction.md)
