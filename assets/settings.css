@@ -7,8 +7,10 @@
   --mono-saturation : 30%;
   --theme-saturation: 100%;
   --theme-lightness : 50%;
-  --doodle-bg1: #EEF1F6;
-  --doodle-bg2: #E0E4EB;
+  --doodle-bg: #fff;
+  --doodle-bg1: #F2F4F8;
+  --doodle-bg2: #FCFCFD;
+  --doodle-opacity: 1;
 
   /* App
   ============================================================================= */
@@ -70,8 +72,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --theme-color: #3378FF;
-    --doodle-bg1: #121721;
-    --doodle-bg2: #121721;
+    --doodle-bg: #121721;
+    --doodle-bg1: #242E42;
+    --doodle-bg2: #000000;
+    --doodle-opacity: 0.5;
     --base-background-color: var(--mono-shade3);
     --spinner-track-color: #000;
     --cover-heading-color: #fff;

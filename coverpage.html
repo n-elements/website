@@ -1,22 +1,20 @@
 <css-doodle>
   :doodle {
-    @grid: 20 / 100vw;
-    grid-gap: 40px;
-    @min-size: 40em;
+    @grid: 20 / 100vmax;
+    @min-size: 30em;
   }
 
-  transform: scale(@pick(.2, 0.5, 1));
   transition: @rand(500ms) ease;
-  pointer-events: none;
 
   background: @pick(
     var(--doodle-bg1), var(--doodle-bg2)
   );
 
   border-radius: @pick(
-    4px,
-    8px,
-    100%,
+    100% 0 0 0,
+    0 100% 0 0,
+    0 0 100% 0,
+    0 0 0 100%
   );
 </css-doodle>
 <h1>
