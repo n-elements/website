@@ -10,7 +10,7 @@
     "update:cssdb": "npx browserslist@latest --update-db"
   },
   "dependencies": {
-    "docsify-cli": "4.1.7"
+    "docsify-cli": "4.4.1"
   },
   "browserslist": [
     "last 1 chrome version",
