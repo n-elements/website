@@ -11,7 +11,7 @@ Instead of this...
 you will write this...
 
 ```html
-<p style="bg-hover:var(--primary); margin-t:var(--space-1); flex-s-lg:0; margin-t:0;">
+<p style="--bg-hover:var(--primary); --margin-t:var(--space-1); --flex-s-lg:0; --margin-t:0;">
 ```
 
 You are free to pass any valid value to each property without generating multiple variants of it, and you can also perform calculations inside any property, based on the situation. You may notice that this approach is similar to writing inline style, but here some difference:
