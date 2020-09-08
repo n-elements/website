@@ -25,7 +25,7 @@ module.exports = {
 [style*='--bg:'] {
   background-color: var(--bg);
 }
-[style*='--bg-hover:'] {
+[style*='--bg-hover:']:hover {
   background-color: var(--bg-hover);
 }
 ```
