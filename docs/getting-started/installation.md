@@ -42,8 +42,6 @@ You can then import the **compiled** file from within **CSS** or **JS**:
 @import '@native-elements/core';
 ```
 
-By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it with your PostCSS plugins.
-
 #### ** JS **
 
 ```js
@@ -52,6 +50,8 @@ import '@native-elements/core';
 ```
 
 <!-- tabs:end -->
+
+By using this method you avoid the HTTP request to the CDN and you will be able to handle the final output as you want, for example by parsing it with your PostCSS plugins.
 
 ### Compiling source
 
