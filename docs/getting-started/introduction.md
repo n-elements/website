@@ -44,15 +44,15 @@ Built on top of <a href="https://postcss.org/" target="_blank" rel="noopener nor
 
 ### Other features
 
-- Classless base styling of semantic HTML elements
-- All packed inside a gzipped size of just <a href="https://bundlephobia.com/result?p=@native-elements/core" target="_blank" rel="noopener noreferrer">less than <kbd>6kb</kbd></a>
-- Drop n Build - No compiling required
+- Classless base styling of semantic HTML elements.
+- All packed inside a gzipped size of just <a href="https://bundlephobia.com/result?p=@native-elements/core" target="_blank" rel="noopener noreferrer">less than <kbd>6kb</kbd>.</a>
+- Drop n Build - No compiling required.
 - Flexibility — Create your UI components following the naming convention you like.
 
 ## When to use it
 
 - You're working on projects for **modern and secure web browsers** <img width="16px" alt="Google Chrome" src="https://goo.gl/U987PH"/> <img width="16px" alt="Firefox" src="https://bit.ly/35SKj4D"/> <img width="16px" alt="Safari" src="https://goo.gl/S1vPDZ"/> <img width="16px" alt="Edge" src="https://bit.ly/2MnqnyS"/>
-- You're not going to mix other CSS frameworks
+- You're not going to mix other CSS frameworks.
 - You want to save time sacrificing a bit of flexibility.
 
 
