@@ -31,7 +31,7 @@ More advantages compared to other utility frameworks:
 
 ?> For repeated elements, we would always recommend to create your own repeatable, modular CSS.
 
-## Instalation {docsify-ignore}
+## Installation {docsify-ignore}
 
 [Funky](https://www.npmjs.org/package/@native-elements/funky ':target=_blank') is a CLI tool, you can install it locally, globally or you can run it when you need it [by using `npx`](docs/funky/usage).
 
