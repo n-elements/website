@@ -35,3 +35,32 @@ Can be applied to a container to create a group of `<details>` elements with sep
   </details>
 </div>
 ```
+
+## ne-prose
+
+Used to set vertical leading and correctly space textual elements inside.
+
+<iframe src="https://ne-doc-prose.glitch.me" width="100%" height="600" frameborder="0" loading="lazy" ></iframe>
+
+```html
+<main ne-prose>
+  <h1>
+    Page title heading
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu purus sit amet felis feugiat malesuada. Donec ullamcorper, ligula quis pellentesque rhoncus, justo neque ultrices magna, sed elementum nulla ante auctor lectus. Aliquam iaculis metus turpis, bibendum luctus risus molestie lacinia. Praesent non lacus finibus, finibus neque vel, commodo metus. Sed nec purus ante. Nam consectetur mattis arcu eget porttitor. Proin auctor dapibus sem in luctus. Vivamus a erat efficitur, dapibus odio vitae, facilisis odio.
+  </p>
+  <p>...</p>
+
+  <h2>H2 level title</h2>
+  <p>...</p>
+
+  <h3>
+    H3 level title
+  </h3>
+  <p>...</p>
+
+  <h2>H2 level title</h2>
+  <p>...</p>
+</main>
+```
