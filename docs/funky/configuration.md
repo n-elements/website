@@ -67,6 +67,26 @@ module.exports = {
 }
 ```
 
+### Ranged breakpoints
+
+Each breakpoint value can be a `string` or an `object`. When it's of type `string` it generate a `min-width` query. If you define an object, you can use the `max` and `min` keys. If only `max` is present, it generates `width <= VALUE` (`max-width: VALUE`), if you add also the `min` key it generates `MIN <= value <= MAX`. For example:
+
+
+```js
+module.exports = {
+  breakpoints: {
+    toSmall: {
+      max: '48em' // => (max-width: 48em)
+    },
+    smallToMedium: {
+      min: '48em',
+      max: '60em' // => (min-width: 48em) and (max-width: 60em)
+    },    
+  }
+};
+```
+
+
 <!-- tabs:end -->
 
 ## Local configuration
