@@ -66,6 +66,8 @@ module.exports = {
   }
 }
 ```
+<!-- tabs:end -->
+
 
 ### Ranged breakpoints
 
@@ -85,9 +87,6 @@ module.exports = {
   }
 };
 ```
-
-
-<!-- tabs:end -->
 
 ## Local configuration
 
