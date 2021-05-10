@@ -77,6 +77,7 @@ Each breakpoint value can be a `string` or an `object`. When it's of type `strin
 ```js
 module.exports = {
   breakpoints: {
+    large: '80em', // => (min-width: 80em)
     toSmall: {
       max: '48em' // => (max-width: 48em)
     },
