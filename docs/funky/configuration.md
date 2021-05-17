@@ -181,7 +181,7 @@ This set where to generate the output css. If you're not passing the <code>--out
 ```js
 {
   // the `min-width` breakpoint name and value
-  name: string,
+  name: string | { min?: string; max?: string },
 }
 ```
 </details>
