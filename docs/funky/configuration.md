@@ -181,7 +181,7 @@ This set where to generate the output css. If you're not passing the <code>--out
 ```js
 {
   // the `min-width` breakpoint name and value
-  name: string | { min?: string; max?: string },
+  name: string | { min?: string; max?: string };
 }
 ```
 </details>
@@ -195,11 +195,11 @@ This set where to generate the output css. If you're not passing the <code>--out
 utilities: {
   'varName': {
     // Set if it should have responsive variants
-    type: 'standard' | 'responsive',
+    type: 'standard' | 'responsive';
     // Any CSS property name
-    property: string,
+    property: string;
     // Any CSS pseudo-class: hover, focus, etc...
-    states?: string[]
+    states?: string[];
   }
 }
 ```
